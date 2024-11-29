@@ -85,10 +85,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetC": [
-								"9e5bb691f84ea326",
-								"4424c8795aa171be"
-							]
+							"SetC": ["9e5bb691f84ea326", "4424c8795aa171be"]
 						}
 					}
 				}
@@ -124,10 +121,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetA": [
-								"92ac3f83bc91bf18",
-								"c9b00bdd9a34fe32"
-							]
+							"SetA": ["92ac3f83bc91bf18", "c9b00bdd9a34fe32"]
 						}
 					}
 				}
@@ -163,11 +157,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetB": [
-								"70ba0be5af5d610e",
-								"ae65ea79dea8af9d",
-								"301ebdec6870ddf0"
-							]
+							"SetB": ["70ba0be5af5d610e", "ae65ea79dea8af9d", "301ebdec6870ddf0"]
 						}
 					}
 				}

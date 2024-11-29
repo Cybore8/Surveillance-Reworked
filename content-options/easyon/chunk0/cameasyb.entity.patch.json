@@ -3,16 +3,10 @@
 	"tbluHash": "001E4C444002AC37",
 	"patch": [
 		{
-			"SubEntityOperation": [
-				"5e1ddbfa960b9f2f",
-				{ "RemoveAllEventConnectionsForEvent": "OnTrue" }
-			]
+			"SubEntityOperation": ["5e1ddbfa960b9f2f", { "RemoveAllEventConnectionsForEvent": "OnTrue" }]
 		},
 		{
-			"SubEntityOperation": [
-				"5e1ddbfa960b9f2f",
-				{ "RemoveAllEventConnectionsForEvent": "OnFalse" }
-			]
+			"SubEntityOperation": ["5e1ddbfa960b9f2f", { "RemoveAllEventConnectionsForEvent": "OnFalse" }]
 		}
 	],
 	"patchVersion": 6

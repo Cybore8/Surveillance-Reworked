@@ -3,19 +3,13 @@
 	"tbluHash": "0057F9CB591C5391",
 	"patch": [
 		{
-			"SubEntityOperation": [
-				"eee5ea5a2bb0980e",
-				{ "RemoveAllEventConnectionsForEvent": "OnFalse" }
-			]
+			"SubEntityOperation": ["eee5ea5a2bb0980e", { "RemoveAllEventConnectionsForEvent": "OnFalse" }]
 		},
 		{
 			"SubEntityOperation": [
 				"eee5ea5a2bb0980e",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnTrue",
-						"MakeInvisible"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "MakeInvisible"]
 				}
 			]
 		},
@@ -23,10 +17,7 @@
 			"SubEntityOperation": [
 				"eee5ea5a2bb0980e",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnTrue",
-						"Disable"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "Disable"]
 				}
 			]
 		},
@@ -34,10 +25,7 @@
 			"SubEntityOperation": [
 				"eee5ea5a2bb0980e",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnTrue",
-						"SetTruedisphysics"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "SetTruedisphysics"]
 				}
 			]
 		},
@@ -45,11 +33,7 @@
 			"SubEntityOperation": [
 				"eee5ea5a2bb0980e",
 				{
-					"AddEventConnection": [
-						"OnTrue",
-						"SetTrue",
-						"cafea80129a979ea"
-					]
+					"AddEventConnection": ["OnTrue", "SetTrue", "cafea80129a979ea"]
 				}
 			]
 		},
@@ -57,11 +41,7 @@
 			"SubEntityOperation": [
 				"980fab05c7454633",
 				{
-					"AddEventConnection": [
-						"Out",
-						"Poll",
-						"cafe588e930dc580"
-					]
+					"AddEventConnection": ["Out", "Poll", "cafe588e930dc580"]
 				}
 			]
 		},

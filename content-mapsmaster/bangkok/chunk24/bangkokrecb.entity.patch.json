@@ -66,10 +66,7 @@
 			"SubEntityOperation": [
 				"feed180dfa2bbc38",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 6 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 6 }]
 				}
 			]
 		},

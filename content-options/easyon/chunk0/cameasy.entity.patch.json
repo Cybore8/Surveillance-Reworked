@@ -10,10 +10,7 @@
 						"m_aParameters",
 						[
 							{
-								"AddItemBefore": [
-									"353e238b53c1590b",
-									"29a8ad57333f426d"
-								]
+								"AddItemBefore": ["353e238b53c1590b", "29a8ad57333f426d"]
 							}
 						]
 					]

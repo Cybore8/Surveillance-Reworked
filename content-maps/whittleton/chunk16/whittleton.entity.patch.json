@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"5aefeb1c10b695ac",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 5 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 5 }]
 				}
 			]
 		},
@@ -17,11 +14,7 @@
 			"SubEntityOperation": [
 				"5aefeb1c10b695ac",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"5aefeb1c10b695ac"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "5aefeb1c10b695ac"]
 				}
 			]
 		},
@@ -29,10 +22,7 @@
 			"SubEntityOperation": [
 				"5cfa64cf7aab15ed",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 6 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 6 }]
 				}
 			]
 		},
@@ -40,11 +30,7 @@
 			"SubEntityOperation": [
 				"5cfa64cf7aab15ed",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"5cfa64cf7aab15ed"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "5cfa64cf7aab15ed"]
 				}
 			]
 		},

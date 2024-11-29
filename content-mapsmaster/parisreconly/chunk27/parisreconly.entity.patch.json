@@ -33,11 +33,7 @@
 						},
 						"m_aSecurityDevices": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"61825b2f8675140c",
-								"f4bf3a2d4c8af771",
-								"9dc0f2903abae5f9"
-							],
+							"value": ["61825b2f8675140c", "f4bf3a2d4c8af771", "9dc0f2903abae5f9"],
 							"postInit": true
 						}
 					},

@@ -28,11 +28,7 @@
 			"SubEntityOperation": [
 				"564b3033ba850db7",
 				{
-					"AddInputCopyConnection": [
-						"SetA",
-						"Poll",
-						"cafe8cfdb2caeadc"
-					]
+					"AddInputCopyConnection": ["SetA", "Poll", "cafe8cfdb2caeadc"]
 				}
 			]
 		},
@@ -40,11 +36,7 @@
 			"SubEntityOperation": [
 				"564b3033ba850db7",
 				{
-					"AddInputCopyConnection": [
-						"SetB",
-						"Poll",
-						"cafe747259777851"
-					]
+					"AddInputCopyConnection": ["SetB", "Poll", "cafe747259777851"]
 				}
 			]
 		},
@@ -52,11 +44,7 @@
 			"SubEntityOperation": [
 				"564b3033ba850db7",
 				{
-					"AddInputCopyConnection": [
-						"SetC",
-						"Poll",
-						"cafe628a2823ca2a"
-					]
+					"AddInputCopyConnection": ["SetC", "Poll", "cafe628a2823ca2a"]
 				}
 			]
 		},
@@ -64,11 +52,7 @@
 			"SubEntityOperation": [
 				"564b3033ba850db7",
 				{
-					"AddInputCopyConnection": [
-						"SetD",
-						"Poll",
-						"cafeefa9cf19b8b8"
-					]
+					"AddInputCopyConnection": ["SetD", "Poll", "cafeefa9cf19b8b8"]
 				}
 			]
 		},
@@ -76,11 +60,7 @@
 			"SubEntityOperation": [
 				"564b3033ba850db7",
 				{
-					"AddInputCopyConnection": [
-						"SetU",
-						"Poll",
-						"cafe21c889727ccc"
-					]
+					"AddInputCopyConnection": ["SetU", "Poll", "cafe21c889727ccc"]
 				}
 			]
 		},

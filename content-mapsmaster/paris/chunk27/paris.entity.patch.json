@@ -6,28 +6,18 @@
 			"SubEntityOperation": [
 				"8843fc923ea8039e",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 9 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 9 }]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"8843fc923ea8039e",
-				{ "RemoveAllEventConnectionsForEvent": "OnErased" }
-			]
+			"SubEntityOperation": ["8843fc923ea8039e", { "RemoveAllEventConnectionsForEvent": "OnErased" }]
 		},
 		{
 			"SubEntityOperation": [
 				"8843fc923ea8039e",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"ChangeScreenTexture",
-						"07f5de49c0bb0514"
-					]
+					"AddEventConnection": ["OnFalse", "ChangeScreenTexture", "07f5de49c0bb0514"]
 				}
 			]
 		},
@@ -107,9 +97,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -179,9 +167,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -252,9 +238,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -325,9 +309,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -407,9 +389,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -480,9 +460,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -553,9 +531,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}
@@ -626,9 +602,7 @@
 						"OnTrue": { "SetTrue": ["6d5f20c5f2538b52"] }
 					},
 					"subsets": {
-						"Activatable_NormalGameplay, IEntity": [
-							"fffffffffffffffe"
-						],
+						"Activatable_NormalGameplay, IEntity": ["fffffffffffffffe"],
 						"AudioEmitters": ["fffffffffffffffe"]
 					}
 				}

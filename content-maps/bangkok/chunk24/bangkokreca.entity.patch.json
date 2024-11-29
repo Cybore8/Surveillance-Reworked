@@ -39,10 +39,7 @@
 			"SubEntityOperation": [
 				"319c6bd4e7287527",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 5 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 5 }]
 				}
 			]
 		},

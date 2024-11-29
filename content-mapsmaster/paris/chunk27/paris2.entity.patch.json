@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"7321b3906bc105cc",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnTrue",
-						"SetTrue"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "SetTrue"]
 				}
 			]
 		},
@@ -17,11 +14,7 @@
 			"SubEntityOperation": [
 				"7321b3906bc105cc",
 				{
-					"AddEventConnection": [
-						"OnTrue",
-						"Poll",
-						"cafe505c08de37de"
-					]
+					"AddEventConnection": ["OnTrue", "Poll", "cafe505c08de37de"]
 				}
 			]
 		},
@@ -29,11 +22,7 @@
 			"SubEntityOperation": [
 				"7321b3906bc105cc",
 				{
-					"AddEventConnection": [
-						"OnTrue",
-						"SetTruex",
-						"ae88b57b3251ed52"
-					]
+					"AddEventConnection": ["OnTrue", "SetTruex", "ae88b57b3251ed52"]
 				}
 			]
 		},
@@ -72,10 +61,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetFalse": [
-								"cafe6b2e640ff56f",
-								"08b7bfee1fbe8d8d"
-							]
+							"SetFalse": ["cafe6b2e640ff56f", "08b7bfee1fbe8d8d"]
 						}
 					}
 				}

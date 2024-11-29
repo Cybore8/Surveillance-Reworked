@@ -4,16 +4,16 @@
 	"name": "Surveillance System Reworked",
 	"description": "Separate surveillance cameras and their respective linked recorders.",
 	"authors": ["Cyb"],
-	"frameworkVersion": "2.33.6",
-   	"loadAfter": ["GlacierOrganisation.CommunityPatches", "musicalmushr00m.bangkok-recorder"],
-   	"contentFolders": ["content"],
+	"frameworkVersion": "2.33.20",
+	"loadAfter": ["GlacierOrganisation.CommunityPatches", "musicalmushr00m.bangkok-recorder"],
+	"contentFolders": ["content"],
 	"dependencies": [
-	{
-		"runtimeID": "00CBBCE1BAA331FA",
-		"comment": "objectivestate",
-		"toChunk": 0,
-		"portFromChunk1": true
-	}
+		{
+			"runtimeID": "00CBBCE1BAA331FA",
+			"comment": "objectivestate",
+			"toChunk": 0,
+			"portFromChunk1": true
+		}
 	],
 	"localisedLines": {
 		"00751865136EC00C": "UI_CYB_SURVEYERASEDA",
@@ -32,466 +32,465 @@
 		}
 	},
 	"options": [
-        {
-            "name": "Default",
-            "type": "select",
+		{
+			"name": "Default",
+			"type": "select",
 			"tooltip": "Default option.",
 			"group": "Difficulty",
-            "enabledByDefault": true
-        },
-        {
-            "name": "Master Only",
-            "type": "select",
+			"enabledByDefault": true
+		},
+		{
+			"name": "Master Only",
+			"type": "select",
 			"tooltip": "Separate camera recordings will only be active in Master dificulty.",
 			"group": "Difficulty",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/difficulty"]
-        },
-        {
-            "name": "On",
-            "type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/difficulty"]
+		},
+		{
+			"name": "On",
+			"type": "select",
 			"tooltip": "Camera and recorder Leds will be color coded based on their zones or groupings.",
 			"group": "Colored Leds",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/colorson"]
-        },
-        {
-            "name": "Off",
-            "type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/colorson"]
+		},
+		{
+			"name": "Off",
+			"type": "select",
 			"tooltip": "Camera and recorder Leds will retain their vanilla colors.",
 			"group": "Colored Leds",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/colorsoff"]
-        },
-        {
-            "name": "On",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/colorsoff"]
+		},
+		{
+			"name": "On",
 			"tooltip": "Recorder storing the evidence will show on the in-game map menu when multiple recorders are present.",
 			"group": "Recording Map Tracker",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/mapon"]
-        },
-        {
-            "name": "Always On",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/mapon"]
+		},
+		{
+			"name": "Always On",
 			"tooltip": "Recorder storing the evidence will always be shown on the in-game map menu.",
 			"group": "Recording Map Tracker",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/mapalwayson"]
-        },
-        {
-            "name": "Off",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/mapalwayson"]
+		},
+		{
+			"name": "Off",
 			"tooltip": "Recorder storing the evidence will not be shown on the in-game map menu.",
 			"group": "Recording Map Tracker",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/mapoff"]
-        },
-        {
-            "name": "On",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/mapoff"]
+		},
+		{
+			"name": "On",
 			"tooltip": "Evidence can be deleted in Master, functions as in vanilla.",
 			"group": "Master - Recordings Deletion",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/masterunrecoff"]
-        },
-        {
-            "name": "Off",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/masterunrecoff"]
+		},
+		{
+			"name": "Off",
 			"tooltip": "Evidence deletion disabled in Master. Destroying a recorder will not restore the no recordings objective.",
 			"group": "Master - Recordings Deletion",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/masterunrecon"]
-        },
-        {
-            "name": "On",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/masterunrecon"]
+		},
+		{
+			"name": "On",
 			"tooltip": "Separate recordings will be disabled when grid option is set to off.",
 			"group": "Camera Grid Override Option",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/gridon"]
-        },
-        {
-            "name": "On (Grid On)",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/gridon"]
+		},
+		{
+			"name": "On (Grid On)",
 			"tooltip": "Separate recordings will be disabled when grid option is set to off (grid stays on despite set to off).",
 			"group": "Camera Grid Override Option",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/gridalwayson"]
-        },
-        {
-            "name": "Off",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/gridalwayson"]
+		},
+		{
+			"name": "Off",
 			"tooltip": "Separate recordings will be active by default.",
 			"group": "Camera Grid Override Option",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/gridoff"]
-        },
-        {
-            "name": "On",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/gridoff"]
+		},
+		{
+			"name": "On",
 			"tooltip": "SA/Recorded indicator will be dimmed when evidence is deleted. A dimmed SA/recorded indicator should generally indicate SA upon mission completion.",
 			"group": "SA Icon Recorded Opacity",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/opacityon"]
-        },
-        {
-            "name": "Off",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/opacityon"]
+		},
+		{
+			"name": "Off",
 			"tooltip": "SA/Recorded indicator opacity will remain constant.",
 			"group": "SA Icon Recorded Opacity",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/opacityoff"]
-        },
-        {
-            "name": "On",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/opacityoff"]
+		},
+		{
+			"name": "On",
 			"tooltip": "Separate recordings will be enabled in Freelancer. The checks for recordings will only occur post target eliminations.",
 			"group": "Freelancer - Separate Recordings",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/freelanceron"]
-        },
-        {
-            "name": "Off",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/freelanceron"]
+		},
+		{
+			"name": "Off",
 			"tooltip": "Separate recordings will be disabled in Freelancer. This will make recorders function as in vanilla in Freelancer mode.",
 			"group": "Freelancer - Separate Recordings",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/freelanceroff"]
-        },
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/freelanceroff"]
+		},
 		{
-            "name": "On",
+			"name": "On",
 			"tooltip": "Manually disabling recording through prompt will shut off all cameras and erase all recordings.",
 			"group": "Recorder Interaction Override",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-options/interacton"]
-        },
-        {
-            "name": "Off",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-options/interacton"]
+		},
+		{
+			"name": "Off",
 			"tooltip": "Default Mod behavior.",
 			"group": "Recorder Interaction Override",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-options/interactoff"]
-        },
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-options/interactoff"]
+		},
 		{
-			
 			"name": "     Difficulty Info",
 			"tooltip": "If the default difficulty is selected for a map, destroying any security recorder will disable the added master cameras. The master cameras will also not be linked to any specific recorder.",
-            "group": "-----------------------------------------Locations-----------------------------------------",
-            "type": "select",
+			"group": "-----------------------------------------Locations-----------------------------------------",
+			"type": "select",
 			"requirements": ["Cyb.RDummy"]
 		},
 		{
-			
 			"name": "   Duck",
 			"tooltip": "Quack",
-            "group": "-----------------------------------------Locations-----------------------------------------",
-            "type": "select",
+			"group": "-----------------------------------------Locations-----------------------------------------",
+			"type": "select",
 			"requirements": ["Cyb.RDummy"]
 		},
-        {
-            "name": "Off",
-            "group": "Paris",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Additional Recorder Only",
-            "type": "select",
-			"tooltip": "Default recording system with Additional Recorder added in Attic.", 
-            "group": "Paris",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/parisreconly"]
-        },
-        {
-            "name": "Default (Dual System)",
-            "type": "select",
-			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.", 
-            "group": "Paris",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/Paris"]
-        },
-        {
-            "name": "Default + Master (Dual System)",
-            "type": "select",
-			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.", 
-            "group": "Paris",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/Paris"]
-        },
-        {
-            "name": "Off",
-            "group": "Sapienza",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Sapienza",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/sapienza"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Sapienza",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/sapienza"]
-        },
-        {
-            "name": "Off",
-            "group": "Bangkok",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Bangkok",
-            "type": "select",
-			"tooltip": "Requires 'Restored Bangkok Security Recorder' mod to be active", 
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/bangkok"],
+		{
+			"name": "Off",
+			"group": "Paris",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Additional Recorder Only",
+			"type": "select",
+			"tooltip": "Default recording system with Additional Recorder added in Attic.",
+			"group": "Paris",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/parisreconly"]
+		},
+		{
+			"name": "Default (Dual System)",
+			"type": "select",
+			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.",
+			"group": "Paris",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/Paris"]
+		},
+		{
+			"name": "Default + Master (Dual System)",
+			"type": "select",
+			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.",
+			"group": "Paris",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/Paris"]
+		},
+		{
+			"name": "Off",
+			"group": "Sapienza",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Sapienza",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/sapienza"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Sapienza",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/sapienza"]
+		},
+		{
+			"name": "Off",
+			"group": "Bangkok",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Bangkok",
+			"type": "select",
+			"tooltip": "Requires 'Restored Bangkok Security Recorder' mod to be active",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/bangkok"],
 			"requirements": ["musicalmushr00m.bangkok-recorder"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Bangkok",
-            "type": "select",
-			"tooltip": "Requires 'Restored Bangkok Security Recorder' mod to be active", 
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/bangkok"],
+		},
+		{
+			"name": "Default + Master",
+			"group": "Bangkok",
+			"type": "select",
+			"tooltip": "Requires 'Restored Bangkok Security Recorder' mod to be active",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/bangkok"],
 			"requirements": ["musicalmushr00m.bangkok-recorder"]
-        },
-        {
-            "name": "Off",
-            "group": "Hokkaido",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Hokkaido",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/hokkaido"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Hokkaido",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/hokkaido"]
-        },
-        {
-            "name": "Off",
-            "group": "Miami",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Miami",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/miami"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Miami",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/miami"]
-        },
-        {
-            "name": "Off",
-            "group": "Colombia",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Colombia",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/colombia"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Colombia",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/colombia"]
-        },
-        {
-            "name": "Off",
-            "group": "Mumbai",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Mumbai",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/mumbai"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Mumbai",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/mumbai"]
-        },
-        {
-            "name": "Off",
-            "group": "Whittleton",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Whittleton",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/whittleton"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Whittleton",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/whittleton"]
-        },
-        {
-            "name": "Off",
-            "group": "Ambrose",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Ambrose",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/ambrose"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Ambrose",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/ambrose"]
-        },
-        {
-            "name": "Off",
-            "group": "Sgail",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Sgail",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/sgail"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Sgail",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/sgail"]
-        },
-        {
-            "name": "Off",
-            "group": "New York",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "New York",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-maps/newyork"]
-        },
-        {
-            "name": "Off",
-            "group": "Haven",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Haven",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-maps/haven"]
-        },
-        {
-            "name": "Off",
-            "group": "Dubai",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default (Dual System)",
-            "group": "Dubai",
-            "type": "select",
-			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.", 
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/dubai"]
-        },
-        {
-            "name": "Default + Master (Dual System)",
-            "group": "Dubai",
-			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.", 
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/dubai"]
-        },
-        {
-            "name": "Off",
-            "group": "Berlin",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Berlin",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/berlin"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Berlin",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/berlin"]
-        },
-        {
-            "name": "Off",
-            "group": "Chongqing",
-            "type": "select",
-            "enabledByDefault": false
-        },
-        {
-            "name": "Default",
-            "group": "Chongqing",
-            "type": "select",
-            "enabledByDefault": false,
-            "contentFolders": ["content-maps/chongqing"]
-        },
-        {
-            "name": "Default + Master",
-            "group": "Chongqing",
-            "type": "select",
-            "enabledByDefault": true,
-            "contentFolders": ["content-mapsmaster/chongqing"]
-        }
-	]
+		},
+		{
+			"name": "Off",
+			"group": "Hokkaido",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Hokkaido",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/hokkaido"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Hokkaido",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/hokkaido"]
+		},
+		{
+			"name": "Off",
+			"group": "Miami",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Miami",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/miami"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Miami",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/miami"]
+		},
+		{
+			"name": "Off",
+			"group": "Colombia",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Colombia",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/colombia"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Colombia",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/colombia"]
+		},
+		{
+			"name": "Off",
+			"group": "Mumbai",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Mumbai",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/mumbai"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Mumbai",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/mumbai"]
+		},
+		{
+			"name": "Off",
+			"group": "Whittleton",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Whittleton",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/whittleton"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Whittleton",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/whittleton"]
+		},
+		{
+			"name": "Off",
+			"group": "Ambrose",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Ambrose",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/ambrose"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Ambrose",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/ambrose"]
+		},
+		{
+			"name": "Off",
+			"group": "Sgail",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Sgail",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/sgail"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Sgail",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/sgail"]
+		},
+		{
+			"name": "Off",
+			"group": "New York",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "New York",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-maps/newyork"]
+		},
+		{
+			"name": "Off",
+			"group": "Haven",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Haven",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-maps/haven"]
+		},
+		{
+			"name": "Off",
+			"group": "Dubai",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default (Dual System)",
+			"group": "Dubai",
+			"type": "select",
+			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/dubai"]
+		},
+		{
+			"name": "Default + Master (Dual System)",
+			"group": "Dubai",
+			"tooltip": "Destroying recorder will erase evidence but secondary recorder will still allow subsequent recordings.",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/dubai"]
+		},
+		{
+			"name": "Off",
+			"group": "Berlin",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Berlin",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/berlin"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Berlin",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/berlin"]
+		},
+		{
+			"name": "Off",
+			"group": "Chongqing",
+			"type": "select",
+			"enabledByDefault": false
+		},
+		{
+			"name": "Default",
+			"group": "Chongqing",
+			"type": "select",
+			"enabledByDefault": false,
+			"contentFolders": ["content-maps/chongqing"]
+		},
+		{
+			"name": "Default + Master",
+			"group": "Chongqing",
+			"type": "select",
+			"enabledByDefault": true,
+			"contentFolders": ["content-mapsmaster/chongqing"]
+		}
+	],
+	"updateCheck": "https://github.com/Cybore8/Surveillance-Reworked/releases/latest/download/updates.json"
 }

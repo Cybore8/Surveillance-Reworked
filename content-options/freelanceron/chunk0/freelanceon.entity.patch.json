@@ -30,10 +30,7 @@
 					},
 					"events": {
 						"EventReceived": {
-							"None": [
-								"cafebe3059c28bc7",
-								"cafecb5f48119859"
-							]
+							"None": ["cafebe3059c28bc7", "cafecb5f48119859"]
 						}
 					}
 				}

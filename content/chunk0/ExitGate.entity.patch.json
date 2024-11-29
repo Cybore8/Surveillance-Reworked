@@ -6,11 +6,7 @@
 			"SubEntityOperation": [
 				"fd2e6dcadfa89fb7",
 				{
-					"AddEventConnection": [
-						"Out01",
-						"TransmitEvent",
-						"cafe1716c6a4430e"
-					]
+					"AddEventConnection": ["Out01", "TransmitEvent", "cafe1716c6a4430e"]
 				}
 			]
 		},

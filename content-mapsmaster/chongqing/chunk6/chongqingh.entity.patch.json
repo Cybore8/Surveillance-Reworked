@@ -32,10 +32,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetB": [
-								"bbd25a51e358dbf6",
-								"e3f940601d6c0a3e"
-							]
+							"SetB": ["bbd25a51e358dbf6", "e3f940601d6c0a3e"]
 						}
 					}
 				}
@@ -82,11 +79,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetA": [
-								"93b60bdb16726de4",
-								"fbcf426fdf7f947e",
-								"f86077bfaadf4cb0"
-							]
+							"SetA": ["93b60bdb16726de4", "fbcf426fdf7f947e", "f86077bfaadf4cb0"]
 						}
 					}
 				}

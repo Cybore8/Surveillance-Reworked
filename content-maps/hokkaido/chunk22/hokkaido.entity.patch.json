@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"76852d1e21fb678f",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 5 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 5 }]
 				}
 			]
 		},
@@ -17,11 +14,7 @@
 			"SubEntityOperation": [
 				"76852d1e21fb678f",
 				{
-					"RemoveEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"eec6eeb4d10df64e"
-					]
+					"RemoveEventConnection": ["OnFalse", "TurnOff", "eec6eeb4d10df64e"]
 				}
 			]
 		},
@@ -29,11 +22,7 @@
 			"SubEntityOperation": [
 				"76852d1e21fb678f",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"76852d1e21fb678f"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "76852d1e21fb678f"]
 				}
 			]
 		},
@@ -41,10 +30,7 @@
 			"SubEntityOperation": [
 				"eec6eeb4d10df64e",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 6 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 6 }]
 				}
 			]
 		},
@@ -52,11 +38,7 @@
 			"SubEntityOperation": [
 				"eec6eeb4d10df64e",
 				{
-					"RemoveEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"76852d1e21fb678f"
-					]
+					"RemoveEventConnection": ["OnFalse", "TurnOff", "76852d1e21fb678f"]
 				}
 			]
 		},
@@ -64,19 +46,12 @@
 			"SubEntityOperation": [
 				"eec6eeb4d10df64e",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"eec6eeb4d10df64e"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "eec6eeb4d10df64e"]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"c0fba3a868150388",
-				{ "RemoveAllEventConnectionsForEvent": "OnFalse" }
-			]
+			"SubEntityOperation": ["c0fba3a868150388", { "RemoveAllEventConnectionsForEvent": "OnFalse" }]
 		},
 		{
 			"AddEntity": [
@@ -108,12 +83,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetB": [
-								"f1e18e88c46f3fa0",
-								"6ce768f113ad21b2",
-								"256b6adf3488efe6",
-								"9e538541be9e2198"
-							]
+							"SetB": ["f1e18e88c46f3fa0", "6ce768f113ad21b2", "256b6adf3488efe6", "9e538541be9e2198"]
 						}
 					}
 				}

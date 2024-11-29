@@ -131,11 +131,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetD": [
-								"d6a17e653ef3eca7",
-								"d71435d9bf67c51f",
-								"8139b72d95013cc3"
-							]
+							"SetD": ["d6a17e653ef3eca7", "d71435d9bf67c51f", "8139b72d95013cc3"]
 						}
 					}
 				}
@@ -171,12 +167,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetA": [
-								"f30bba7838fc8477",
-								"f290ed0f0a00d59f",
-								"3b8299ba0b417388",
-								"0bbf224378f828c8"
-							]
+							"SetA": ["f30bba7838fc8477", "f290ed0f0a00d59f", "3b8299ba0b417388", "0bbf224378f828c8"]
 						}
 					}
 				}

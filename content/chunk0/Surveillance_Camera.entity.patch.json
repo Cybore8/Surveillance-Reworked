@@ -14,10 +14,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnEnter",
-						"SetTrue"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnEnter", "SetTrue"]
 				}
 			]
 		},
@@ -25,10 +22,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnEnter",
-						"In"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnEnter", "In"]
 				}
 			]
 		},
@@ -36,11 +30,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafe545bf8fe0cd0"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafe545bf8fe0cd0"]
 				}
 			]
 		},
@@ -48,11 +38,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafe016b31a558d1"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafe016b31a558d1"]
 				}
 			]
 		},
@@ -60,11 +46,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafea5ee47e877dc"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafea5ee47e877dc"]
 				}
 			]
 		},
@@ -72,11 +54,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafeec7fc930832f"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafeec7fc930832f"]
 				}
 			]
 		},
@@ -84,11 +62,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafe6408a9cff72d"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafe6408a9cff72d"]
 				}
 			]
 		},
@@ -96,11 +70,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafe3e0dc3d8215b"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafe3e0dc3d8215b"]
 				}
 			]
 		},
@@ -108,11 +78,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafed97cbae20ac0"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafed97cbae20ac0"]
 				}
 			]
 		},
@@ -120,11 +86,7 @@
 			"SubEntityOperation": [
 				"e8d7796842af64bb",
 				{
-					"AddEventConnection": [
-						"OnEnter",
-						"Poll",
-						"cafea32475760b9f"
-					]
+					"AddEventConnection": ["OnEnter", "Poll", "cafea32475760b9f"]
 				}
 			]
 		},
@@ -132,11 +94,7 @@
 			"SubEntityOperation": [
 				"f96c91ff438cd1b4",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"Destroy",
-						"e8d7796842af64bb"
-					]
+					"AddEventConnection": ["OnFalse", "Destroy", "e8d7796842af64bb"]
 				}
 			]
 		},
@@ -144,11 +102,7 @@
 			"SubEntityOperation": [
 				"f96c91ff438cd1b4",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"SetTrue",
-						"43867ba647003df9"
-					]
+					"AddEventConnection": ["OnFalse", "SetTrue", "43867ba647003df9"]
 				}
 			]
 		},
@@ -156,11 +110,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetA",
-						"In",
-						"cafed9053d195a79"
-					]
+					"AddInputCopyConnection": ["SetA", "In", "cafed9053d195a79"]
 				}
 			]
 		},
@@ -168,11 +118,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetA",
-						"In",
-						"cafe2f25b8e083fd"
-					]
+					"AddInputCopyConnection": ["SetA", "In", "cafe2f25b8e083fd"]
 				}
 			]
 		},
@@ -180,11 +126,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetA",
-						"SetTrue",
-						"cafefa197a560811"
-					]
+					"AddInputCopyConnection": ["SetA", "SetTrue", "cafefa197a560811"]
 				}
 			]
 		},
@@ -192,11 +134,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetB",
-						"In",
-						"cafe632d94c44e0f"
-					]
+					"AddInputCopyConnection": ["SetB", "In", "cafe632d94c44e0f"]
 				}
 			]
 		},
@@ -204,11 +142,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetB",
-						"In",
-						"cafe2f25b8e083fd"
-					]
+					"AddInputCopyConnection": ["SetB", "In", "cafe2f25b8e083fd"]
 				}
 			]
 		},
@@ -216,11 +150,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetB",
-						"SetTrue",
-						"cafe8aa31caeebf0"
-					]
+					"AddInputCopyConnection": ["SetB", "SetTrue", "cafe8aa31caeebf0"]
 				}
 			]
 		},
@@ -228,11 +158,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetC",
-						"In",
-						"cafe5ddc9bda3308"
-					]
+					"AddInputCopyConnection": ["SetC", "In", "cafe5ddc9bda3308"]
 				}
 			]
 		},
@@ -240,11 +166,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetC",
-						"In",
-						"cafe2f25b8e083fd"
-					]
+					"AddInputCopyConnection": ["SetC", "In", "cafe2f25b8e083fd"]
 				}
 			]
 		},
@@ -252,11 +174,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetC",
-						"SetTrue",
-						"cafe6dbe5f8be484"
-					]
+					"AddInputCopyConnection": ["SetC", "SetTrue", "cafe6dbe5f8be484"]
 				}
 			]
 		},
@@ -264,11 +182,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetD",
-						"In",
-						"cafe5f786aa240da"
-					]
+					"AddInputCopyConnection": ["SetD", "In", "cafe5f786aa240da"]
 				}
 			]
 		},
@@ -276,11 +190,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetD",
-						"In",
-						"cafe2f25b8e083fd"
-					]
+					"AddInputCopyConnection": ["SetD", "In", "cafe2f25b8e083fd"]
 				}
 			]
 		},
@@ -288,11 +198,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetD",
-						"SetTrue",
-						"cafe7822c589ca19"
-					]
+					"AddInputCopyConnection": ["SetD", "SetTrue", "cafe7822c589ca19"]
 				}
 			]
 		},
@@ -300,11 +206,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetU",
-						"In",
-						"cafecb88253e82c7"
-					]
+					"AddInputCopyConnection": ["SetU", "In", "cafecb88253e82c7"]
 				}
 			]
 		},
@@ -312,11 +214,7 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetU",
-						"In",
-						"cafe2f25b8e083fd"
-					]
+					"AddInputCopyConnection": ["SetU", "In", "cafe2f25b8e083fd"]
 				}
 			]
 		},
@@ -324,19 +222,12 @@
 			"SubEntityOperation": [
 				"cc6fa68fff57eeb2",
 				{
-					"AddInputCopyConnection": [
-						"SetU",
-						"SetTrue",
-						"cafe1477a0d4030d"
-					]
+					"AddInputCopyConnection": ["SetU", "SetTrue", "cafe1477a0d4030d"]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"cc6fa68fff57eeb2",
-				{ "RemovePropertyAlias": "HasPower" }
-			]
+			"SubEntityOperation": ["cc6fa68fff57eeb2", { "RemovePropertyAlias": "HasPower" }]
 		},
 		{
 			"SubEntityOperation": [
@@ -540,10 +431,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"f96c91ff438cd1b4",
-								"cafefa197a560811"
-							],
+							"value": ["f96c91ff438cd1b4", "cafefa197a560811"],
 							"postInit": true
 						}
 					}
@@ -616,10 +504,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"f96c91ff438cd1b4",
-								"cafe8aa31caeebf0"
-							],
+							"value": ["f96c91ff438cd1b4", "cafe8aa31caeebf0"],
 							"postInit": true
 						}
 					}
@@ -692,10 +577,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"f96c91ff438cd1b4",
-								"cafe6dbe5f8be484"
-							],
+							"value": ["f96c91ff438cd1b4", "cafe6dbe5f8be484"],
 							"postInit": true
 						}
 					}
@@ -768,10 +650,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"f96c91ff438cd1b4",
-								"cafe7822c589ca19"
-							],
+							"value": ["f96c91ff438cd1b4", "cafe7822c589ca19"],
 							"postInit": true
 						}
 					}
@@ -856,10 +735,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"f96c91ff438cd1b4",
-								"cafe1477a0d4030d"
-							],
+							"value": ["f96c91ff438cd1b4", "cafe1477a0d4030d"],
 							"postInit": true
 						}
 					}
@@ -1381,10 +1257,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe5bd1a8a6b51e",
-								"cafefa197a560811"
-							],
+							"value": ["cafe5bd1a8a6b51e", "cafefa197a560811"],
 							"postInit": true
 						}
 					},
@@ -1481,10 +1354,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe1776d354c693",
-								"cafe8aa31caeebf0"
-							],
+							"value": ["cafe1776d354c693", "cafe8aa31caeebf0"],
 							"postInit": true
 						}
 					},
@@ -1511,10 +1381,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe51bdcca29ac7",
-								"cafe6dbe5f8be484"
-							],
+							"value": ["cafe51bdcca29ac7", "cafe6dbe5f8be484"],
 							"postInit": true
 						}
 					},
@@ -1541,10 +1408,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafef00d73ec3232",
-								"cafe7822c589ca19"
-							],
+							"value": ["cafef00d73ec3232", "cafe7822c589ca19"],
 							"postInit": true
 						}
 					},
@@ -1571,10 +1435,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafed314c647c184",
-								"cafe1477a0d4030d"
-							],
+							"value": ["cafed314c647c184", "cafe1477a0d4030d"],
 							"postInit": true
 						}
 					},

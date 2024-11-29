@@ -32,12 +32,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetA": [
-								"51d3c19592a4a0c2",
-								"fc366dc5bf636f94",
-								"adc405906dea55a1",
-								"a9125fa9e24e1d43"
-							]
+							"SetA": ["51d3c19592a4a0c2", "fc366dc5bf636f94", "adc405906dea55a1", "a9125fa9e24e1d43"]
 						}
 					}
 				}

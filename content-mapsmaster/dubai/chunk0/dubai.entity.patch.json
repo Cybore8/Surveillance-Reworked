@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"db34d95bb482bfb0",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 9 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 9 }]
 				}
 			]
 		},
@@ -17,34 +14,21 @@
 			"SubEntityOperation": [
 				"db34d95bb482bfb0",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"db34d95bb482bfb0"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "db34d95bb482bfb0"]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"64c9b6267c4270d8",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["64c9b6267c4270d8", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
-			"SubEntityOperation": [
-				"83edc0f1a1c48fb5",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["83edc0f1a1c48fb5", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
 			"SubEntityOperation": [
 				"ca4da1d29cf2668d",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 9 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 9 }]
 				}
 			]
 		},
@@ -52,31 +36,18 @@
 			"SubEntityOperation": [
 				"ca4da1d29cf2668d",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"ca4da1d29cf2668d"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "ca4da1d29cf2668d"]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"d697f1be6bc8aa6f",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["d697f1be6bc8aa6f", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
-			"SubEntityOperation": [
-				"5556295562055f4b",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["5556295562055f4b", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
-			"SubEntityOperation": [
-				"39ce76381774d5a6",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["39ce76381774d5a6", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
 			"SubEntityOperation": [
@@ -90,16 +61,10 @@
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"88f2cacbf15f1e03",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["88f2cacbf15f1e03", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
-			"SubEntityOperation": [
-				"2ced04fa6839f125",
-				{ "RemovePropertyByName": "HasPower" }
-			]
+			"SubEntityOperation": ["2ced04fa6839f125", { "RemovePropertyByName": "HasPower" }]
 		},
 		{
 			"AddEntity": [
@@ -266,10 +231,7 @@
 						},
 						"m_aPotentialOperators": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"4a1ba5b1f666024a",
-								"443349ffc4445499"
-							]
+							"value": ["4a1ba5b1f666024a", "443349ffc4445499"]
 						},
 						"m_aCameras": {
 							"type": "TArray<SEntityTemplateReference>",

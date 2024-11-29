@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"777696c0c1289c27",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 6 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 6 }]
 				}
 			]
 		},
@@ -17,10 +14,7 @@
 			"SubEntityOperation": [
 				"777696c0c1289c27",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnFalse",
-						"SetFalse"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "SetFalse"]
 				}
 			]
 		},
@@ -28,11 +22,7 @@
 			"SubEntityOperation": [
 				"777696c0c1289c27",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"777696c0c1289c27"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "777696c0c1289c27"]
 				}
 			]
 		},
@@ -40,10 +30,7 @@
 			"SubEntityOperation": [
 				"8ce32157d48d5ea6",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 5 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 5 }]
 				}
 			]
 		},
@@ -51,10 +38,7 @@
 			"SubEntityOperation": [
 				"8ce32157d48d5ea6",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnFalse",
-						"SetFalse"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "SetFalse"]
 				}
 			]
 		},
@@ -62,11 +46,7 @@
 			"SubEntityOperation": [
 				"8ce32157d48d5ea6",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"8ce32157d48d5ea6"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "8ce32157d48d5ea6"]
 				}
 			]
 		},
@@ -100,10 +80,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetA": [
-								"758f0cd3a4b4c6e2",
-								"cd0feb3a1ea0ca25"
-							]
+							"SetA": ["758f0cd3a4b4c6e2", "cd0feb3a1ea0ca25"]
 						}
 					}
 				}
@@ -139,11 +116,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetB": [
-								"c7e54710fc391bae",
-								"665855bc15d8cd10",
-								"187f9a001ae37fc3"
-							]
+							"SetB": ["c7e54710fc391bae", "665855bc15d8cd10", "187f9a001ae37fc3"]
 						}
 					}
 				}

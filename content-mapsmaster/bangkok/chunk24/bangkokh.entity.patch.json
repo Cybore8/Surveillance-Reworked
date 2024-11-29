@@ -32,10 +32,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetB": [
-								"618b467d5bcdba7e",
-								"8421dee7b6e80113"
-							]
+							"SetB": ["618b467d5bcdba7e", "8421dee7b6e80113"]
 						}
 					}
 				}

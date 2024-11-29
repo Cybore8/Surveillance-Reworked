@@ -39,10 +39,7 @@
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"96ba918d60257892",
-				{ "RemovePropertyByName": "LampGeometry" }
-			]
+			"SubEntityOperation": ["96ba918d60257892", { "RemovePropertyByName": "LampGeometry" }]
 		},
 		{
 			"SubEntityOperation": [
@@ -70,10 +67,7 @@
 			"SubEntityOperation": [
 				"96ba918d60257892",
 				{
-					"PatchArrayPropertyValue": [
-						"m_aRenderables",
-						[{ "RemoveItemByValue": "151add5291faa1cf" }]
-					]
+					"PatchArrayPropertyValue": ["m_aRenderables", [{ "RemoveItemByValue": "151add5291faa1cf" }]]
 				}
 			]
 		},
@@ -81,10 +75,7 @@
 			"SubEntityOperation": [
 				"96ba918d60257892",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"DiffuseColor",
-						"ConstantColorRGB_01_Value"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["DiffuseColor", "ConstantColorRGB_01_Value"]
 				}
 			]
 		},
@@ -97,10 +88,7 @@
 						[
 							{ "RemoveItemByValue": "e45f3da0ee54c793" },
 							{
-								"AddItemAfter": [
-									"bdb026693ba1eb2e",
-									"cafef265566ff4a5"
-								]
+								"AddItemAfter": ["bdb026693ba1eb2e", "cafef265566ff4a5"]
 							}
 						]
 					]
@@ -144,11 +132,7 @@
 			"SubEntityOperation": [
 				"696395f965275f9b",
 				{
-					"AddInputCopyConnection": [
-						"TurnOff",
-						"TurnOff",
-						"cafe792b34dc4f94"
-					]
+					"AddInputCopyConnection": ["TurnOff", "TurnOff", "cafe792b34dc4f94"]
 				}
 			]
 		},
@@ -156,11 +140,7 @@
 			"SubEntityOperation": [
 				"696395f965275f9b",
 				{
-					"AddInputCopyConnection": [
-						"SetA",
-						"Poll",
-						"cafe5f91fca507e4"
-					]
+					"AddInputCopyConnection": ["SetA", "Poll", "cafe5f91fca507e4"]
 				}
 			]
 		},
@@ -168,11 +148,7 @@
 			"SubEntityOperation": [
 				"696395f965275f9b",
 				{
-					"AddInputCopyConnection": [
-						"SetB",
-						"Poll",
-						"cafe9dd4035284d3"
-					]
+					"AddInputCopyConnection": ["SetB", "Poll", "cafe9dd4035284d3"]
 				}
 			]
 		},
@@ -180,11 +156,7 @@
 			"SubEntityOperation": [
 				"696395f965275f9b",
 				{
-					"AddInputCopyConnection": [
-						"SetC",
-						"Poll",
-						"cafe954959a72a5c"
-					]
+					"AddInputCopyConnection": ["SetC", "Poll", "cafe954959a72a5c"]
 				}
 			]
 		},
@@ -192,11 +164,7 @@
 			"SubEntityOperation": [
 				"696395f965275f9b",
 				{
-					"AddInputCopyConnection": [
-						"SetD",
-						"Poll",
-						"cafebff70a7afe8f"
-					]
+					"AddInputCopyConnection": ["SetD", "Poll", "cafebff70a7afe8f"]
 				}
 			]
 		},
@@ -204,11 +172,7 @@
 			"SubEntityOperation": [
 				"696395f965275f9b",
 				{
-					"AddInputCopyConnection": [
-						"SetU",
-						"Poll",
-						"cafed5ba48f0b9da"
-					]
+					"AddInputCopyConnection": ["SetU", "Poll", "cafed5ba48f0b9da"]
 				}
 			]
 		},
@@ -274,25 +238,18 @@
 						},
 						"LampGeometry": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"151add5291faa1cf",
-								"910221f6bbfa754d"
-							],
+							"value": ["151add5291faa1cf", "910221f6bbfa754d"],
 							"postInit": true
 						}
 					},
 					"events": {
 						"GlowPower": {
-							"ConstantVector1D_07_Value": [
-								"ed6b02f0636c8dec"
-							]
+							"ConstantVector1D_07_Value": ["ed6b02f0636c8dec"]
 						},
 						"DiffusePower": { "A": ["54d28dd0bbf709a4"] },
 						"OnBroken": { "BreakAll": ["151add5291faa1cf"] },
 						"DiffuseColor": {
-							"ConstantColorRGB_01_Value": [
-								"ed6b02f0636c8dec"
-							]
+							"ConstantColorRGB_01_Value": ["ed6b02f0636c8dec"]
 						}
 					},
 					"outputCopying": {

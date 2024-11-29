@@ -21,27 +21,18 @@
 			"SubEntityOperation": [
 				"2b71c2ebba5e12fc",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 7 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 7 }]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"2b71c2ebba5e12fc",
-				{ "RemoveAllEventConnectionsForEvent": "OnErased" }
-			]
+			"SubEntityOperation": ["2b71c2ebba5e12fc", { "RemoveAllEventConnectionsForEvent": "OnErased" }]
 		},
 		{
 			"SubEntityOperation": [
 				"2b71c2ebba5e12fc",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnFalse",
-						"TransmitEvent"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "TransmitEvent"]
 				}
 			]
 		},
@@ -49,11 +40,7 @@
 			"SubEntityOperation": [
 				"2b71c2ebba5e12fc",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"2b71c2ebba5e12fc"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "2b71c2ebba5e12fc"]
 				}
 			]
 		},
@@ -61,27 +48,18 @@
 			"SubEntityOperation": [
 				"ca10eed5819aa6c0",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 6 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 6 }]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"ca10eed5819aa6c0",
-				{ "RemoveAllEventConnectionsForEvent": "OnErased" }
-			]
+			"SubEntityOperation": ["ca10eed5819aa6c0", { "RemoveAllEventConnectionsForEvent": "OnErased" }]
 		},
 		{
 			"SubEntityOperation": [
 				"ca10eed5819aa6c0",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnFalse",
-						"TransmitEvent"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "TransmitEvent"]
 				}
 			]
 		},
@@ -89,11 +67,7 @@
 			"SubEntityOperation": [
 				"ca10eed5819aa6c0",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"ca10eed5819aa6c0"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "ca10eed5819aa6c0"]
 				}
 			]
 		},
@@ -101,27 +75,18 @@
 			"SubEntityOperation": [
 				"8df06efacf5c000e",
 				{
-					"AddProperty": [
-						"m_network",
-						{ "type": "int32", "value": 5 }
-					]
+					"AddProperty": ["m_network", { "type": "int32", "value": 5 }]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"8df06efacf5c000e",
-				{ "RemoveAllEventConnectionsForEvent": "OnErased" }
-			]
+			"SubEntityOperation": ["8df06efacf5c000e", { "RemoveAllEventConnectionsForEvent": "OnErased" }]
 		},
 		{
 			"SubEntityOperation": [
 				"8df06efacf5c000e",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnFalse",
-						"TransmitEvent"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "TransmitEvent"]
 				}
 			]
 		},
@@ -129,11 +94,7 @@
 			"SubEntityOperation": [
 				"8df06efacf5c000e",
 				{
-					"AddEventConnection": [
-						"OnFalse",
-						"TurnOff",
-						"8df06efacf5c000e"
-					]
+					"AddEventConnection": ["OnFalse", "TurnOff", "8df06efacf5c000e"]
 				}
 			]
 		},
@@ -223,11 +184,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetC": [
-								"bba1527cadedd333",
-								"015118360393b066",
-								"ffb21599fce74261"
-							]
+							"SetC": ["bba1527cadedd333", "015118360393b066", "ffb21599fce74261"]
 						}
 					}
 				}

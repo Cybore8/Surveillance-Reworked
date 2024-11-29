@@ -32,10 +32,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetD": [
-								"fe26a63b85f9c674",
-								"461f687c14a92f45"
-							]
+							"SetD": ["fe26a63b85f9c674", "461f687c14a92f45"]
 						}
 					}
 				}
@@ -82,11 +79,7 @@
 					},
 					"events": {
 						"OnTrue": {
-							"SetC": [
-								"2f855799c685befb",
-								"11bdfb3787bbaa41",
-								"6d0642ba6bc0721a"
-							]
+							"SetC": ["2f855799c685befb", "11bdfb3787bbaa41", "6d0642ba6bc0721a"]
 						}
 					}
 				}

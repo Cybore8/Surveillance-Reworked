@@ -18,10 +18,7 @@
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"b9ecfc5f6e3fcbfc",
-				{ "SetPropertyPostInit": ["m_rEnabled", true] }
-			]
+			"SubEntityOperation": ["b9ecfc5f6e3fcbfc", { "SetPropertyPostInit": ["m_rEnabled", true] }]
 		}
 	],
 	"patchVersion": 6
