@@ -5,8 +5,8 @@
 	"description": "Separate surveillance cameras and their respective linked recorders.",
 	"authors": ["Cyb"],
 	"frameworkVersion": "2.33.6",
-    "loadAfter": ["GlacierOrganisation.CommunityPatches", "musicalmushr00m.bangkok-recorder"],
-    "contentFolders": ["content"],
+   	"loadAfter": ["GlacierOrganisation.CommunityPatches", "musicalmushr00m.bangkok-recorder"],
+   	"contentFolders": ["content"],
 	"dependencies": [
 	{
 		"runtimeID": "00CBBCE1BAA331FA",
@@ -28,7 +28,7 @@
 			"UI_CYB_SURVEYERASEDB": "Evidence Deleted",
 			"UI_CYB_SURVEYERASEDC": "Recorder Deactivated",
 			"UI_CYB_SURVMODON": "Mod - Surveillance On",
-			"UI_CYB_SURVMODOFF": "Mod - Surveillance Off",
+			"UI_CYB_SURVMODOFF": "Mod - Surveillance Off"
 		}
 	},
 	"options": [
