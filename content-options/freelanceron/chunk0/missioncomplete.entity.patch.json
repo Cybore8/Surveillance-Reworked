@@ -1,0 +1,153 @@
+{
+	"tempHash": "000C6B989C7BD1AD",
+	"tbluHash": "007560E301A35A0B",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"9420cb651f981df8",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"TransmitEvent",
+						"cafeca0bad1fc8e4"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9420cb651f981df8",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"SetTrue",
+						"cafe3f4b637d3929"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe02682dd8313e",
+				{
+					"parent": "cafeca0bad1fc8e4",
+					"name": "Cyb_FreelancerCamCheck",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Cyb_FreelancerCamCheck"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeca0bad1fc8e4",
+				{
+					"parent": "9420cb651f981df8",
+					"name": "Cyb_EventChannelTransmitter_void_01",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe02682dd8313e",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe137ba3818220",
+				{
+					"parent": "9420cb651f981df8",
+					"name": "ValueBool_Poll_Completed",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe3f4b637d3929"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"TransmitEvent": ["cafeca0bad1fc8e4"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3f4b637d3929",
+				{
+					"parent": "cafe137ba3818220",
+					"name": "Completed ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4c0f0724f191",
+				{
+					"parent": "cafed875904c38be",
+					"name": "Cyb_RecorderDestroyed_N",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Cyb_RecorderDestroyed"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed875904c38be",
+				{
+					"parent": "9420cb651f981df8",
+					"name": "Cyb_EventChannelReceiver_void_02 Destroyed",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe4c0f0724f191"
+						}
+					},
+					"events": {
+						"EventReceived": { "Poll": ["cafe137ba3818220"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe54ae06d75d80",
+				{
+					"parent": "cafed875904c38be",
+					"name": "Erased ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,120 @@
+{
+	"tempHash": "006D465C6F70C066",
+	"tbluHash": "0056098CF4136A8D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"7321b3906bc105cc",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTrue",
+						"SetTrue"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"7321b3906bc105cc",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"Poll",
+						"cafe505c08de37de"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"7321b3906bc105cc",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"SetTruex",
+						"ae88b57b3251ed52"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb57204d047a8",
+				{
+					"parent": "08b7bfee1fbe8d8d",
+					"name": "Both Off",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "NONE"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "8843fc923ea8039e",
+									"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								},
+								{
+									"ref": "cafee348f7235a94",
+									"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetFalse": [
+								"cafe6b2e640ff56f",
+								"08b7bfee1fbe8d8d"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6b2e640ff56f",
+				{
+					"parent": "cafeb57204d047a8",
+					"name": "One On",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe505c08de37de",
+				{
+					"parent": "08b7bfee1fbe8d8d",
+					"name": "Poll - One On Bool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe6b2e640ff56f"
+						}
+					},
+					"events": {
+						"PollTrue": { "SetTrue": ["ae88b57b3251ed52"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

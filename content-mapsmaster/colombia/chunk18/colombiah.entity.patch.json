@@ -1,0 +1,145 @@
+{
+	"tempHash": "008126CD29B3ADBF",
+	"tbluHash": "00ACF4D1909459B1",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe01b459fa042b",
+				{
+					"parent": "cafe027da3c2e9a4",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "20d884d8e32463e6",
+									"externalScene": "[assembly:/_pro/scenes/missions/colombia/scenario_hippo.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"ba8315b2cef8a4fd",
+								"cb7ce0251ab4f367",
+								"d97ca44d5490473f",
+								"43e1719d540c4a65",
+								"8e9d74eb7c6887e1",
+								"4b8fab0a8eafd988",
+								"3c5e90573a838416",
+								"859aceeb5cb9585b",
+								"f6374b2a5d9ccc49",
+								"22ea19033b7d9178"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe027da3c2e9a4",
+				{
+					"parent": "fe87cb5cdf55ac39",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe42b88843ad90",
+				{
+					"parent": "cafe027da3c2e9a4",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "9bd54560052d1fc6",
+									"externalScene": "[assembly:/_pro/scenes/missions/colombia/scenario_hippo.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"d9896b8d610faef0",
+								"1b99f75635858b78",
+								"4ec90ab5723b7641",
+								"8edad57732756132"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebe9e7baad2a6",
+				{
+					"parent": "cafe027da3c2e9a4",
+					"name": "Recorder C",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "5fcfe7d46df50366",
+									"externalScene": "[assembly:/_pro/scenes/missions/colombia/scenario_hippo.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"419c63b12ec5701b",
+								"852a4b2cad10e55c"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

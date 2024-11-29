@@ -1,0 +1,92 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe024867f7ad14",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recorder Options",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec692a7072298",
+				{
+					"parent": "cafecf31ce3eba28",
+					"name": "UIOptionCondition",
+					"factory": "[modules:/zuioptioncondition.class].pc_entitytype",
+					"blueprint": "[modules:/zuioptioncondition.class].pc_entityblueprint",
+					"properties": {
+						"m_eOption": {
+							"type": "_EUIOptionKey",
+							"value": "UI_OPTION_GAME_AID_CAMERA_GRID"
+						},
+						"m_nTargetValueFloat": {
+							"type": "float32",
+							"value": 0.0
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecf31ce3eba28",
+				{
+					"parent": "cafe024867f7ad14",
+					"name": "ValueBool_Operation_01",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["cafec692a7072298"]
+						}
+					},
+					"events": {
+						"OnTrue": { "SetTrue": ["cafe420df093bb82"] },
+						"OnFalse": { "SetFalse": ["cafe420df093bb82"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe420df093bb82",
+				{
+					"parent": "cafe024867f7ad14",
+					"name": "Grid Option - ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe852ed5efc42f",
+				{
+					"parent": "cafe024867f7ad14",
+					"name": "Grid Option - Always On ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

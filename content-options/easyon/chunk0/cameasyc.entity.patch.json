@@ -1,0 +1,104 @@
+{
+	"tempHash": "00EA9204791DBE64",
+	"tbluHash": "0057F9CB591C5391",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"eee5ea5a2bb0980e",
+				{ "RemoveAllEventConnectionsForEvent": "OnFalse" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"eee5ea5a2bb0980e",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTrue",
+						"MakeInvisible"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"eee5ea5a2bb0980e",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTrue",
+						"Disable"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"eee5ea5a2bb0980e",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTrue",
+						"SetTruedisphysics"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"eee5ea5a2bb0980e",
+				{
+					"AddEventConnection": [
+						"OnTrue",
+						"SetTrue",
+						"cafea80129a979ea"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"980fab05c7454633",
+				{
+					"AddEventConnection": [
+						"Out",
+						"Poll",
+						"cafe588e930dc580"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe588e930dc580",
+				{
+					"parent": "eee5ea5a2bb0980e",
+					"name": "Poll - Easy Bool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafea80129a979ea"
+						}
+					},
+					"events": {
+						"PollTrue": { "Erase": ["aecc0f00004ed389"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea80129a979ea",
+				{
+					"parent": "cafe588e930dc580",
+					"name": "Easy Bool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

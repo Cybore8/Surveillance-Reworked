@@ -1,0 +1,326 @@
+{
+	"tempHash": "00887DDFD8656D90",
+	"tbluHash": "00FA83E7FF633C2E",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"19efa3659ec67d09",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"EventReceived",
+						"Disable"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"19efa3659ec67d09",
+				{
+					"AddEventConnection": [
+						"EventReceived",
+						"TurnOff",
+						"5fcfe7d46df50366"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5a194df74088ffb2",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "9bd54560052d1fc6",
+							"externalScene": null,
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8f82e2c86b0c5f9f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "5fcfe7d46df50366",
+							"externalScene": null,
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"20d884d8e32463e6",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 6 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"20d884d8e32463e6",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"20d884d8e32463e6"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"70061984314b263b",
+				{ "RemoveAllEventConnectionsForEvent": "Out" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5fcfe7d46df50366",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 7 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5fcfe7d46df50366",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnFalse",
+						"TransmitEvent"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5fcfe7d46df50366",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"5fcfe7d46df50366"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5fcfe7d46df50366",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"SetFalse",
+						"47689bf659a371d8"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9bd54560052d1fc6",
+				{ "SetName": "Recorder in Caves" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9bd54560052d1fc6",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 5 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"9bd54560052d1fc6",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"9bd54560052d1fc6"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ab354932bad8b2ad",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "20d884d8e32463e6",
+							"externalScene": null,
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ab354932bad8b2ad",
+				{ "SetPropertyPostInit": ["m_rEnabled", true] }
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe93d10b6157ac",
+				{
+					"parent": "cafe95d0348f2099",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "20d884d8e32463e6",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"87cf28743f0c47f3",
+								"e25fa6788d506ec0",
+								"7ecf351e1f2096bf",
+								"000b91167a1c95c1",
+								"4275333e5d033cbf",
+								"f7d1b001ef713f6c",
+								"07c9e926a4ac746c",
+								"be2b771f4bfd0590",
+								"be95f92fdac0eec3",
+								"7522b0ab484821bc",
+								"68c9a3ce170ca449",
+								"46d7532ef42aa7aa",
+								"91e151fbdb396007",
+								"8c861d115306162f"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe95d0348f2099",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe424e6ccec12d",
+				{
+					"parent": "cafe95d0348f2099",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "9bd54560052d1fc6",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"050d5b159c574511",
+								"66ddd764cedfc5a9",
+								"95242db2158cce4e"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe523962a4f022",
+				{
+					"parent": "cafe95d0348f2099",
+					"name": "Recorder C",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "5fcfe7d46df50366",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetC": [
+								"2c4a1b56dbb2c24c",
+								"afe79969b4135177"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

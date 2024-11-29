@@ -1,0 +1,298 @@
+{
+	"tempHash": "00FF13BC71FBD8DF",
+	"tbluHash": "006DE61CDCE4C98D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"db34d95bb482bfb0",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 9 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"db34d95bb482bfb0",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"db34d95bb482bfb0"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"64c9b6267c4270d8",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"83edc0f1a1c48fb5",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ca4da1d29cf2668d",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 9 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ca4da1d29cf2668d",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"ca4da1d29cf2668d"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d697f1be6bc8aa6f",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5556295562055f4b",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"39ce76381774d5a6",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2fd5cd06509409d7",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": "cafeb1bffacd5e36"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"88f2cacbf15f1e03",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ced04fa6839f125",
+				{ "RemovePropertyByName": "HasPower" }
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec75799f9e91b",
+				{
+					"parent": "cafe8f0ea39aa916",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "ca4da1d29cf2668d",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8f0ea39aa916",
+				{
+					"parent": "9e27db67f7aa50da",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed0385117a8c1",
+				{
+					"parent": "cafe8f0ea39aa916",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "db34d95bb482bfb0",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetU": [
+								"88f2cacbf15f1e03",
+								"d697f1be6bc8aa6f",
+								"2ced04fa6839f125",
+								"5556295562055f4b",
+								"39ce76381774d5a6",
+								"83edc0f1a1c48fb5",
+								"64c9b6267c4270d8"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe6ad7cd483b4a",
+				{
+					"parent": "cafe8f0ea39aa916",
+					"name": "Both Off",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "NONE"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "db34d95bb482bfb0",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								},
+								{
+									"ref": "ca4da1d29cf2668d",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetFalse": [
+								"88f2cacbf15f1e03",
+								"d697f1be6bc8aa6f",
+								"2ced04fa6839f125",
+								"5556295562055f4b",
+								"39ce76381774d5a6",
+								"83edc0f1a1c48fb5",
+								"64c9b6267c4270d8",
+								"cafeb1bffacd5e36"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb1bffacd5e36",
+				{
+					"parent": "cafe6ad7cd483b4a",
+					"name": "One On",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0f62e9ce2b1a",
+				{
+					"parent": "ea560fc22d1eeb40",
+					"name": "SecurityRoom 3",
+					"factory": "[modules:/zsecurityroomentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsecurityroomentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rEnabled": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeb1bffacd5e36"
+						},
+						"m_aPotentialOperators": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"4a1ba5b1f666024a",
+								"443349ffc4445499"
+							]
+						},
+						"m_aCameras": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"88f2cacbf15f1e03",
+								"d697f1be6bc8aa6f",
+								"83edc0f1a1c48fb5",
+								"2ced04fa6839f125",
+								"5556295562055f4b",
+								"39ce76381774d5a6",
+								"64c9b6267c4270d8"
+							],
+							"postInit": true
+						},
+						"m_aVolumes": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["0431a54201439daa"],
+							"postInit": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

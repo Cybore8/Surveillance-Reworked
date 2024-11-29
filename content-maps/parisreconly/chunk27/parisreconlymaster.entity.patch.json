@@ -1,0 +1,157 @@
+{
+	"tempHash": "000B9756C6AF4C97",
+	"tbluHash": "001936937FF4E585",
+	"patch": [
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "e8f65021cb1ec2b7",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_mTransform",
+				"propertyOverride": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": -155.30017979005117
+						},
+						"position": {
+							"x": -240.341796875,
+							"y": 4.8891401290893555,
+							"z": -5.539226055145264
+						}
+					}
+				}
+			}
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "d71681c3848467d6",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_mTransform",
+				"propertyOverride": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 126.26807381993447
+						},
+						"position": {
+							"x": -286.480712890625,
+							"y": 70.62288665771484,
+							"z": -1.4813799858093262
+						}
+					}
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "cafe899fde3ebcc1",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"44b0f62eb9c04dbe",
+						"c61658256d4a4393",
+						"abce70dd502d050e",
+						"33d5d8f348ae2604",
+						"bb0b439489c7759a",
+						"e83eaddcc1bcb95c",
+						"2bf5060b52318e81",
+						"97d5fe92a92a2f0a",
+						"60c2dc8480fcc60e",
+						"48160dc88ef5b8e8",
+						"ba77ca1738f773f8",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"db5750b7ff559eab",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"22d474df7913b830",
+						"64d703ffb8dfb1cf",
+						"175f00e419c44926",
+						"1fa704e5901d10ee",
+						"feeaa291972b16e5",
+						"53582e9bc735024e",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "e8f65021cb1ec2b7",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_mTransform",
+				"propertyOverride": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": -155.30017979005115
+						},
+						"position": {
+							"x": -240.341796875,
+							"y": 4.8891401290893555,
+							"z": -5.539226055145264
+						}
+					}
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "d71681c3848467d6",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_mTransform",
+				"propertyOverride": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 126.26807381993449
+						},
+						"position": {
+							"x": -286.480712890625,
+							"y": 70.62288665771484,
+							"z": -1.4813799858093262
+						}
+					}
+				}
+			}
+		}
+	],
+	"patchVersion": 6
+}

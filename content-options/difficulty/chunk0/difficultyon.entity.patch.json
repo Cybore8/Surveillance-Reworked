@@ -1,0 +1,102 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafeb342f189053a",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recorder Options",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed0a6c93fc564",
+				{
+					"parent": "cafeb342f189053a",
+					"name": "Difficulty On",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe280997f18584",
+				{
+					"parent": "cafed0a6c93fc564",
+					"name": "Difficult is Hard",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["cafe046e9694aaf0"],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetTrue": ["cafe7abd2e37ae54"],
+							"SetFalse": ["cafe2ce0c898a1d5"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe046e9694aaf0",
+				{
+					"parent": "cafe280997f18584",
+					"name": "Difficulty Hard",
+					"factory": "[modules:/zdifficultycondition.class].pc_entitytype",
+					"blueprint": "[modules:/zdifficultycondition.class].pc_entityblueprint",
+					"properties": {
+						"m_eDifficulty": {
+							"type": "EDifficultyLevel",
+							"value": "eDL_HARD"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7abd2e37ae54",
+				{
+					"parent": "cafe280997f18584",
+					"name": "Hard ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2ce0c898a1d5",
+				{
+					"parent": "cafed0a6c93fc564",
+					"name": "No Color ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

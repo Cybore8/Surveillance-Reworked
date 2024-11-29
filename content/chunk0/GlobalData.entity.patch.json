@@ -1,0 +1,6 @@
+{
+	"tempHash": "00097AA87B144150",
+	"tbluHash": "00E738E7CF7A35E1",
+	"patch": [{ "AddExternalScene": "00115F08CEC0C37A" }],
+	"patchVersion": 6
+}

@@ -1,0 +1,32 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe38ec7ce4cdd4",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recorder Options",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe935128d42d48",
+				{
+					"parent": "cafe38ec7ce4cdd4",
+					"name": "Opacity ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,459 @@
+{
+	"tempHash": "000B9756C6AF4C97",
+	"tbluHash": "001936937FF4E585",
+	"patch": [
+		{ "RemoveEntityByID": "97d5fe92a92a2f0a" },
+		{ "RemoveEntityByID": "c61658256d4a4393" },
+		{ "RemoveEntityByID": "48160dc88ef5b8e8" },
+		{ "RemoveEntityByID": "33d5d8f348ae2604" },
+		{ "RemoveEntityByID": "e83eaddcc1bcb95c" },
+		{ "RemoveEntityByID": "44b0f62eb9c04dbe" },
+		{ "RemoveEntityByID": "feeaa291972b16e5" },
+		{ "RemoveEntityByID": "ba77ca1738f773f8" },
+		{
+			"AddEntity": [
+				"cafee984852ae12d",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec11b0977d1cb",
+				{
+					"parent": "cafee984852ae12d",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "8843fc923ea8039e",
+									"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetU": [
+								"abce70dd502d050e",
+								"bb0b439489c7759a",
+								"2bf5060b52318e81",
+								"60c2dc8480fcc60e",
+								"19386777f74861a2",
+								"32e8dd47d1128d37",
+								"09102b1f823cf8f6",
+								"3620eeece6d7f688",
+								"db5750b7ff559eab",
+								"1201b05e405971bb",
+								"525265a51c6eb5b9",
+								"22d474df7913b830",
+								"64d703ffb8dfb1cf",
+								"175f00e419c44926",
+								"1fa704e5901d10ee",
+								"53582e9bc735024e",
+								"dba86a89abe0d877",
+								"5e188c1ee66fea44",
+								"ffb7ad815a6495c9",
+								"e8d4e8f864e534d3"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe643ce8045ff5",
+				{
+					"parent": "cafee984852ae12d",
+					"name": "Both Off",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "NONE"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "8843fc923ea8039e",
+									"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								},
+								{
+									"ref": "cafee348f7235a94",
+									"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetFalse": [
+								"abce70dd502d050e",
+								"bb0b439489c7759a",
+								"2bf5060b52318e81",
+								"60c2dc8480fcc60e",
+								"19386777f74861a2",
+								"32e8dd47d1128d37",
+								"09102b1f823cf8f6",
+								"3620eeece6d7f688",
+								"db5750b7ff559eab",
+								"1201b05e405971bb",
+								"525265a51c6eb5b9",
+								"22d474df7913b830",
+								"64d703ffb8dfb1cf",
+								"175f00e419c44926",
+								"1fa704e5901d10ee",
+								"53582e9bc735024e",
+								"dba86a89abe0d877",
+								"5e188c1ee66fea44",
+								"ffb7ad815a6495c9",
+								"e8d4e8f864e534d3"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafede64df2ef84b",
+				{
+					"parent": "cafe643ce8045ff5",
+					"name": "One On",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
+					}
+				}
+			]
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "8843fc923ea8039e",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"44b0f62eb9c04dbe",
+						"c61658256d4a4393",
+						"abce70dd502d050e",
+						"33d5d8f348ae2604",
+						"bb0b439489c7759a",
+						"e83eaddcc1bcb95c",
+						"2bf5060b52318e81",
+						"97d5fe92a92a2f0a",
+						"60c2dc8480fcc60e",
+						"48160dc88ef5b8e8",
+						"ba77ca1738f773f8",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"db5750b7ff559eab",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"22d474df7913b830",
+						"64d703ffb8dfb1cf",
+						"175f00e419c44926",
+						"1fa704e5901d10ee",
+						"feeaa291972b16e5",
+						"53582e9bc735024e",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3"
+					]
+				}
+			}
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "e86e12ccea16344f",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"33d5d8f348ae2604",
+						"abce70dd502d050e",
+						"bb0b439489c7759a",
+						"1fa704e5901d10ee",
+						"feeaa291972b16e5",
+						"44b0f62eb9c04dbe",
+						"c61658256d4a4393",
+						"e83eaddcc1bcb95c",
+						"2bf5060b52318e81",
+						"ba77ca1738f773f8",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"22d474df7913b830",
+						"175f00e419c44926",
+						"53582e9bc735024e",
+						"64d703ffb8dfb1cf",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3",
+						"97d5fe92a92a2f0a",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"db5750b7ff559eab",
+						"60c2dc8480fcc60e",
+						"48160dc88ef5b8e8"
+					]
+				}
+			}
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "a92c8501c41703e6",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"33d5d8f348ae2604",
+						"abce70dd502d050e",
+						"bb0b439489c7759a",
+						"1fa704e5901d10ee",
+						"feeaa291972b16e5",
+						"44b0f62eb9c04dbe",
+						"c61658256d4a4393",
+						"e83eaddcc1bcb95c",
+						"2bf5060b52318e81",
+						"ba77ca1738f773f8",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"22d474df7913b830",
+						"175f00e419c44926",
+						"53582e9bc735024e",
+						"64d703ffb8dfb1cf",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3",
+						"97d5fe92a92a2f0a",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"db5750b7ff559eab",
+						"60c2dc8480fcc60e",
+						"48160dc88ef5b8e8"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "8843fc923ea8039e",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"abce70dd502d050e",
+						"bb0b439489c7759a",
+						"2bf5060b52318e81",
+						"60c2dc8480fcc60e",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"db5750b7ff559eab",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"22d474df7913b830",
+						"64d703ffb8dfb1cf",
+						"175f00e419c44926",
+						"1fa704e5901d10ee",
+						"53582e9bc735024e",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "e86e12ccea16344f",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"abce70dd502d050e",
+						"bb0b439489c7759a",
+						"2bf5060b52318e81",
+						"60c2dc8480fcc60e",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"db5750b7ff559eab",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"22d474df7913b830",
+						"64d703ffb8dfb1cf",
+						"175f00e419c44926",
+						"1fa704e5901d10ee",
+						"53582e9bc735024e",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "a92c8501c41703e6",
+					"externalScene": "[assembly:/_pro/scenes/missions/paris/gameplay_palace_fashionshow.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "61825b2f8675140c",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "f4bf3a2d4c8af771",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						{
+							"ref": "9dc0f2903abae5f9",
+							"externalScene": "[assembly:/_pro/scenes/missions/paris/location.brick].pc_entitytype"
+						},
+						"abce70dd502d050e",
+						"bb0b439489c7759a",
+						"2bf5060b52318e81",
+						"60c2dc8480fcc60e",
+						"19386777f74861a2",
+						"32e8dd47d1128d37",
+						"09102b1f823cf8f6",
+						"3620eeece6d7f688",
+						"db5750b7ff559eab",
+						"1201b05e405971bb",
+						"525265a51c6eb5b9",
+						"22d474df7913b830",
+						"64d703ffb8dfb1cf",
+						"175f00e419c44926",
+						"1fa704e5901d10ee",
+						"53582e9bc735024e",
+						"dba86a89abe0d877",
+						"5e188c1ee66fea44",
+						"ffb7ad815a6495c9",
+						"e8d4e8f864e534d3"
+					]
+				}
+			}
+		}
+	],
+	"patchVersion": 6
+}

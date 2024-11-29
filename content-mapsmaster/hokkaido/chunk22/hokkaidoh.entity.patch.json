@@ -1,0 +1,103 @@
+{
+	"tempHash": "00B668E642AB275B",
+	"tbluHash": "00EC296EF416B1B3",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe23aac25b5a10",
+				{
+					"parent": "cafeb47252aa501c",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "eec6eeb4d10df64e",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"433d3af2679d1ef4",
+								"e5f3716bdfea6735",
+								"172a1d9a6f497da1",
+								"d6298626c7328f0c",
+								"3c44783256fe4e64",
+								"51ac97da7eb46730",
+								"d7e532374cd31f93"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb47252aa501c",
+				{
+					"parent": "68c60814084c2d38",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe55185e2bd4a4",
+				{
+					"parent": "cafeb47252aa501c",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "76852d1e21fb678f",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"e2d33be536a7c81a",
+								"67e183ec1346e6bd",
+								"271b409b613b0a74",
+								"e7b75f444a0e4a69"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

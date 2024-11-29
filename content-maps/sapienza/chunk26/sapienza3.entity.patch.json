@@ -1,0 +1,22 @@
+{
+	"tempHash": "00506E5E344E8BEB",
+	"tbluHash": "001465414D47AD7F",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"41bca0b0fe68273a",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "8ce32157d48d5ea6",
+							"externalScene": "[assembly:/_pro/scenes/missions/coastaltown/location.brick].pc_entitytype",
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

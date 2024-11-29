@@ -1,0 +1,163 @@
+{
+	"tempHash": "00D9B106D7ABFEFA",
+	"tbluHash": "00BC2760EC34A91F",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"e22f13fc421e560a",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 6 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e22f13fc421e560a",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"e22f13fc421e560a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"461cb3c3fb2ff264",
+				{
+					"AddProperty": [
+						"m_rEnabled",
+						{
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "71bf0d5ebc3e085b",
+								"externalScene": null,
+								"exposedEntity": "IsWorking"
+							},
+							"postInit": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"71bf0d5ebc3e085b",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 5 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"71bf0d5ebc3e085b",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"71bf0d5ebc3e085b"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1aa498a023db",
+				{
+					"parent": "cafee5117a06379c",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "71bf0d5ebc3e085b",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"de341626b3dde579",
+								"5d2064f6a2c214ae",
+								"fddfa1b425b468d3"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee5117a06379c",
+				{
+					"parent": "ca6ed815105a1fd8",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe27102e6a6384",
+				{
+					"parent": "cafee5117a06379c",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "71bf0d5ebc3e085b",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"d8ee3142a077f8ec",
+								"4467467e48efe0e5",
+								"a6d241cd4776f19c"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

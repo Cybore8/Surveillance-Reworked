@@ -1,0 +1,572 @@
+{
+	"tempHash": "00082E9A80C7882D",
+	"tbluHash": "00DB348B4CD24175",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe0069faa81833",
+				{
+					"parent": "cafe8f594951bb33",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "feed180dfa2bbc38",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/dressing_surveillance.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"618b467d5bcdba7e",
+								"8421dee7b6e80113"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8f594951bb33",
+				{
+					"parent": "e88371d13b50ae4e",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0e4a3daa0b59",
+				{
+					"parent": "cafe8f594951bb33",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "319c6bd4e7287527",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"6c2fcb965f10c607",
+								"c4db5538cec9ea99",
+								"6cbaf520bf8de4b3",
+								"9639d94c19b10972",
+								"582bae7251e9ca27",
+								"7ccef56924498cb7"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "7f9c5f820b20d7f7",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "5405aa59c4df148a",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "6e7c4d4c59ec5810",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "98e0867e37dd65b3",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "e3140015e2808d59",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "7938f17181a2b90d",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "abb851c1e56258ae",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "c9a75ba84263da63",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "97ca9d1126d80b66",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "70ebe2faafd0f45c",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "672255676a9e27b4",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "67ea514efe9b7944",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "1e4735c14a72a701",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "080a7b26e5bfac9f",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"618b467d5bcdba7e",
+						"6c2fcb965f10c607",
+						"c4db5538cec9ea99",
+						"6cbaf520bf8de4b3",
+						"9639d94c19b10972",
+						"8421dee7b6e80113",
+						"582bae7251e9ca27",
+						"7ccef56924498cb7"
+					]
+				}
+			}
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "feeda43837839bdd",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/dressing_surveillance.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "5405aa59c4df148a",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "6e7c4d4c59ec5810",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "98e0867e37dd65b3",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "e3140015e2808d59",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "7938f17181a2b90d",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "abb851c1e56258ae",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "c9a75ba84263da63",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "97ca9d1126d80b66",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "70ebe2faafd0f45c",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "672255676a9e27b4",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "67ea514efe9b7944",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "1e4735c14a72a701",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "080a7b26e5bfac9f",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"618b467d5bcdba7e",
+						"6c2fcb965f10c607",
+						"c4db5538cec9ea99",
+						"6cbaf520bf8de4b3",
+						"9639d94c19b10972",
+						"8421dee7b6e80113",
+						"582bae7251e9ca27",
+						"7ccef56924498cb7"
+					]
+				}
+			}
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "319c6bd4e7287527",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "7938f17181a2b90d",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "e3140015e2808d59",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "98e0867e37dd65b3",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "6e7c4d4c59ec5810",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "5405aa59c4df148a",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "abb851c1e56258ae",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "c9a75ba84263da63",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "67ea514efe9b7944",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "672255676a9e27b4",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "70ebe2faafd0f45c",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "97ca9d1126d80b66",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "080a7b26e5bfac9f",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "1e4735c14a72a701",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"618b467d5bcdba7e",
+						"6c2fcb965f10c607",
+						"c4db5538cec9ea99",
+						"6cbaf520bf8de4b3",
+						"9639d94c19b10972",
+						"8421dee7b6e80113",
+						"582bae7251e9ca27",
+						"7ccef56924498cb7"
+					]
+				}
+			}
+		},
+		{
+			"RemovePropertyOverrideConnection": {
+				"entity": {
+					"ref": "feed180dfa2bbc38",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/dressing_surveillance.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "7938f17181a2b90d",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "e3140015e2808d59",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "98e0867e37dd65b3",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "6e7c4d4c59ec5810",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "5405aa59c4df148a",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "abb851c1e56258ae",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "c9a75ba84263da63",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "67ea514efe9b7944",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "672255676a9e27b4",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "70ebe2faafd0f45c",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "97ca9d1126d80b66",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "080a7b26e5bfac9f",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "1e4735c14a72a701",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"618b467d5bcdba7e",
+						"6c2fcb965f10c607",
+						"c4db5538cec9ea99",
+						"6cbaf520bf8de4b3",
+						"9639d94c19b10972",
+						"8421dee7b6e80113",
+						"582bae7251e9ca27",
+						"7ccef56924498cb7"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "319c6bd4e7287527",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "98e0867e37dd65b3",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "6e7c4d4c59ec5810",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "5405aa59c4df148a",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "abb851c1e56258ae",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "c9a75ba84263da63",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "672255676a9e27b4",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "70ebe2faafd0f45c",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "97ca9d1126d80b66",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"6c2fcb965f10c607",
+						"c4db5538cec9ea99",
+						"6cbaf520bf8de4b3",
+						"9639d94c19b10972",
+						"582bae7251e9ca27",
+						"7ccef56924498cb7"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "feed180dfa2bbc38",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/dressing_surveillance.brick].pc_entitytype"
+				},
+				"propertyName": "m_aSecurityDevices",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "7938f17181a2b90d",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "e3140015e2808d59",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "67ea514efe9b7944",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "080a7b26e5bfac9f",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "1e4735c14a72a701",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"618b467d5bcdba7e",
+						"8421dee7b6e80113"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "feeda43837839bdd",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/dressing_surveillance.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "e3140015e2808d59",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "7938f17181a2b90d",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "67ea514efe9b7944",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "1e4735c14a72a701",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "080a7b26e5bfac9f",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"618b467d5bcdba7e",
+						"8421dee7b6e80113"
+					]
+				}
+			}
+		},
+		{
+			"AddPropertyOverrideConnection": {
+				"entity": {
+					"ref": "7f9c5f820b20d7f7",
+					"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+				},
+				"propertyName": "m_aCameras",
+				"propertyOverride": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "5405aa59c4df148a",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "6e7c4d4c59ec5810",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "98e0867e37dd65b3",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "abb851c1e56258ae",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "c9a75ba84263da63",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "97ca9d1126d80b66",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "70ebe2faafd0f45c",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						{
+							"ref": "672255676a9e27b4",
+							"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+						},
+						"6c2fcb965f10c607",
+						"c4db5538cec9ea99",
+						"6cbaf520bf8de4b3",
+						"9639d94c19b10972",
+						"582bae7251e9ca27",
+						"7ccef56924498cb7"
+					]
+				}
+			}
+		}
+	],
+	"patchVersion": 6
+}

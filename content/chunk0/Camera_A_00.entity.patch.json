@@ -1,0 +1,831 @@
+{
+	"tempHash": "004870A34B9947C3",
+	"tbluHash": "008C89A1A916C87C",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"ed6b02f0636c8dec",
+				{
+					"SetPropertyValue": {
+						"property_name": "ConstantVector1D_07_Value_op",
+						"value": "eModulate"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ed6b02f0636c8dec",
+				{
+					"SetPropertyValue": {
+						"property_name": "ConstantColorRGB_01_Value",
+						"value": "#ffffff"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ed6b02f0636c8dec",
+				{
+					"AddProperty": [
+						"ConstantColorRGB_02_Value_op",
+						{
+							"type": "IRenderMaterialEntity.EModifierOperation",
+							"value": "eModulate"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"96ba918d60257892",
+				{ "RemovePropertyByName": "LampGeometry" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"96ba918d60257892",
+				{
+					"SetPropertyValue": {
+						"property_name": "GlowPower",
+						"value": 4.0
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"96ba918d60257892",
+				{
+					"SetPropertyValue": {
+						"property_name": "DiffuseColor",
+						"value": "#00ff44"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"96ba918d60257892",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aRenderables",
+						[{ "RemoveItemByValue": "151add5291faa1cf" }]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"96ba918d60257892",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"DiffuseColor",
+						"ConstantColorRGB_01_Value"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"6c721bab02629958",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aValues",
+						[
+							{ "RemoveItemByValue": "e45f3da0ee54c793" },
+							{
+								"AddItemAfter": [
+									"bdb026693ba1eb2e",
+									"cafef265566ff4a5"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"7b2d77d41c02e11f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_mTransform",
+						"value": {
+							"rotation": {
+								"x": -3.6492470302018194e-14,
+								"y": 84.99990209950946,
+								"z": 90.00000000000016
+							},
+							"position": {
+								"x": 0.0,
+								"y": -0.0820859968662262,
+								"z": 0.0677499994635582
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"SetPropertyValue": {
+						"property_name": "GlowPower",
+						"value": 10.0
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddInputCopyConnection": [
+						"TurnOff",
+						"TurnOff",
+						"cafe792b34dc4f94"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddInputCopyConnection": [
+						"SetA",
+						"Poll",
+						"cafe5f91fca507e4"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddInputCopyConnection": [
+						"SetB",
+						"Poll",
+						"cafe9dd4035284d3"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddInputCopyConnection": [
+						"SetC",
+						"Poll",
+						"cafe954959a72a5c"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddInputCopyConnection": [
+						"SetD",
+						"Poll",
+						"cafebff70a7afe8f"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddInputCopyConnection": [
+						"SetU",
+						"Poll",
+						"cafed5ba48f0b9da"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"696395f965275f9b",
+				{
+					"AddPropertyAliasConnection": [
+						"LedColor",
+						{
+							"originalProperty": "DiffuseColor",
+							"originalEntity": "cafe792b34dc4f94"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8277153272f7dc08",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_mTransform",
+						"value": {
+							"rotation": {
+								"x": 106.60054770394908,
+								"y": 2.2827396657418975,
+								"z": -173.73893926061726
+							},
+							"position": {
+								"x": 0.002194999950006604,
+								"y": -0.21704800426959991,
+								"z": 0.03129199892282486
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe792b34dc4f94",
+				{
+					"parent": "96ba918d60257892",
+					"name": "FX_Logic_LampCore B",
+					"factory": "[assembly:/_pro/effects/templates/logic/fx_logic_lampcore.template?/fx_logic_lampcore.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/effects/templates/logic/fx_logic_lampcore.template?/fx_logic_lampcore.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"GlowPower": { "type": "float32", "value": 6.0 },
+						"DiffusePower": {
+							"type": "float32",
+							"value": 2000.0
+						},
+						"On": { "type": "bool", "value": true },
+						"DiffuseColor": {
+							"type": "SColorRGB",
+							"value": "#00ff44"
+						},
+						"m_aRenderables": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["151add5291faa1cf"],
+							"postInit": true
+						},
+						"LampGeometry": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"151add5291faa1cf",
+								"910221f6bbfa754d"
+							],
+							"postInit": true
+						}
+					},
+					"events": {
+						"GlowPower": {
+							"ConstantVector1D_07_Value": [
+								"ed6b02f0636c8dec"
+							]
+						},
+						"DiffusePower": { "A": ["54d28dd0bbf709a4"] },
+						"OnBroken": { "BreakAll": ["151add5291faa1cf"] },
+						"DiffuseColor": {
+							"ConstantColorRGB_01_Value": [
+								"ed6b02f0636c8dec"
+							]
+						}
+					},
+					"outputCopying": {
+						"OnBroken": { "OnBroken": ["696395f965275f9b"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeec6266221408",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "ValueColorRGB_Poll 1",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe853d9ff80d9d"
+						}
+					},
+					"events": {
+						"PollValue": {
+							"DiffuseColor": ["cafe792b34dc4f94"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec484c66b0229",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "ValueColorRGB_Poll 2",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe30cd70adeb89"
+						}
+					},
+					"events": {
+						"PollValue": {
+							"DiffuseColor": ["cafe792b34dc4f94"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee25a13f95450",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "ValueColorRGB_Poll 3",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe13d267443b36"
+						}
+					},
+					"events": {
+						"PollValue": {
+							"DiffuseColor": ["cafe792b34dc4f94"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebfc7306ca586",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "ValueColorRGB_Poll 4",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafec01876a28054"
+						}
+					},
+					"events": {
+						"PollValue": {
+							"DiffuseColor": ["cafe792b34dc4f94"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe853d9ff80d9d",
+				{
+					"parent": "cafeec6266221408",
+					"name": "RGB 1",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_Value": {
+							"type": "SColorRGB",
+							"value": "#dd3a00"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe30cd70adeb89",
+				{
+					"parent": "cafec484c66b0229",
+					"name": "RGB 2",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_Value": {
+							"type": "SColorRGB",
+							"value": "#0696b3"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe13d267443b36",
+				{
+					"parent": "cafee25a13f95450",
+					"name": "RGB 3",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_Value": {
+							"type": "SColorRGB",
+							"value": "#459600"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec01876a28054",
+				{
+					"parent": "cafebfc7306ca586",
+					"name": "RGB 4",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_Value": {
+							"type": "SColorRGB",
+							"value": "#e50c7f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe00e9d7c670c5",
+				{
+					"parent": "696395f965275f9b",
+					"name": "Network Colors",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeafe3ceea1fce",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "ValueColorRGB_Poll U",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafef3c422ec122d"
+						}
+					},
+					"events": {
+						"PollValue": {
+							"DiffuseColor": ["cafe792b34dc4f94"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef3c422ec122d",
+				{
+					"parent": "cafeafe3ceea1fce",
+					"name": "RGB 1",
+					"factory": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuecolorrgb.template?/valuecolorrgb_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_Value": {
+							"type": "SColorRGB",
+							"value": "#323232"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe5f91fca507e4",
+				{
+					"parent": "cafeec6266221408",
+					"name": "Poll 1 - Led Disabled",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafea99e2e956d08",
+								"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+							}
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafef82d80428964"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9dd4035284d3",
+				{
+					"parent": "cafec484c66b0229",
+					"name": "Poll 2 - Led Disabled",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafea99e2e956d08",
+								"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+							}
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafeb3a51d857c05"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe954959a72a5c",
+				{
+					"parent": "cafee25a13f95450",
+					"name": "Poll 3 - Led Disabled",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafea99e2e956d08",
+								"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+							}
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafe98447e7facbb"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebff70a7afe8f",
+				{
+					"parent": "cafebfc7306ca586",
+					"name": "Poll 4 - Led Disabled",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafea99e2e956d08",
+								"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+							}
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafeb058c1ac0dd0"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed5ba48f0b9da",
+				{
+					"parent": "cafeafe3ceea1fce",
+					"name": "Poll 5 - Led Disabled",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": {
+								"ref": "cafea99e2e956d08",
+								"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+							}
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafe3bf9939e3864"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe581941ac275d",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "Umbrella",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ANY"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "cafecb5f48119859",
+									"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe2ce0c898a1d5",
+									"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+								},
+								{
+									"ref": "cafe420df093bb82",
+									"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef82d80428964",
+				{
+					"parent": "cafeec6266221408",
+					"name": "Poll A - Colors",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe581941ac275d"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafeec6266221408"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb3a51d857c05",
+				{
+					"parent": "cafec484c66b0229",
+					"name": "Poll B - Colors",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe581941ac275d"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafec484c66b0229"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe98447e7facbb",
+				{
+					"parent": "cafee25a13f95450",
+					"name": "Poll C - Colors",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe581941ac275d"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafee25a13f95450"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb058c1ac0dd0",
+				{
+					"parent": "cafebfc7306ca586",
+					"name": "Poll D - Colors",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe581941ac275d"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafebfc7306ca586"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3bf9939e3864",
+				{
+					"parent": "cafeafe3ceea1fce",
+					"name": "Poll U - Colors",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe581941ac275d"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafeafe3ceea1fce"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef265566ff4a5",
+				{
+					"parent": "cafe2afb3c4c4b5e",
+					"name": "Umbrella Any On",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ANY"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"e45f3da0ee54c793",
+								{
+									"ref": "cafe852ed5efc42f",
+									"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2afb3c4c4b5e",
+				{
+					"parent": "cafe00e9d7c670c5",
+					"name": "Grid Visibility",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddExternalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+		},
+		{
+			"AddComment": {
+				"parent": "cafe581941ac275d",
+				"name": "Notes",
+				"text": "Freelancer, Difficulty & Grid"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "cafe792b34dc4f94",
+				"name": "Notes",
+				"text": "\t\t\"GlowPower\": {\n\t\t\t\"type\": \"float32\",\n\t\t\t\"value\": 20.0\n\t\t},\n\t\t\"DiffusePower\": {\n\t\t\t\"type\": \"float32\",\n\t\t\t\"value\": 3000.0\n\t\t},"
+			}
+		},
+		{
+			"AddComment": {
+				"parent": "ed6b02f0636c8dec",
+				"name": "Notes",
+				"text": "\t\t\"ConstantColorRGB_01_Value\": {\n\t\t\t\"type\": \"SColorRGB\",\n\t\t\t\"value\": \"#4dffd8\"\n\t\t},"
+			}
+		}
+	],
+	"patchVersion": 6
+}

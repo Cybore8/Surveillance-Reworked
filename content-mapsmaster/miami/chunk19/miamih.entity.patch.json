@@ -1,0 +1,187 @@
+{
+	"tempHash": "00F3A400367835B7",
+	"tbluHash": "00034D12FB516572",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafeeebd5cc09731",
+				{
+					"parent": "cafeeba887b01d35",
+					"name": "Recorder C",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "bb5c6e86a7c321db",
+									"externalScene": "[assembly:/_pro/scenes/missions/miami/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetC": [
+								"e3dac7a7a43554d3",
+								"a19fd5d945af5e10",
+								"9bf4b483cc34b86d",
+								"5459b8f97015c926",
+								"a3b2a61858fb75f4",
+								"f98c2ed9ea1af62c"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeeba887b01d35",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe08185bc63d93",
+				{
+					"parent": "cafeeba887b01d35",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "5794efa050dd1aa7",
+									"externalScene": "[assembly:/_pro/scenes/missions/miami/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"df42677b93decd00",
+								"ba4c66a5bdf95ff1",
+								"20d8a5c7ec8802ae",
+								"7e3f262f2c8b48fe",
+								"18eaef478d03386f",
+								"633f48f5abaafc78",
+								"820d473c7edefbe9",
+								"d18639ad3b1d1a75"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe2cda4266f776",
+				{
+					"parent": "cafeeba887b01d35",
+					"name": "Recorder D",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "c9957e1e15eb0490",
+									"externalScene": "[assembly:/_pro/scenes/missions/miami/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetD": [
+								"d6a17e653ef3eca7",
+								"d71435d9bf67c51f",
+								"8139b72d95013cc3"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe95019d1615c4",
+				{
+					"parent": "cafeeba887b01d35",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "71f7abca147739ea",
+									"externalScene": "[assembly:/_pro/scenes/missions/miami/location.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"f30bba7838fc8477",
+								"f290ed0f0a00d59f",
+								"3b8299ba0b417388",
+								"0bbf224378f828c8"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

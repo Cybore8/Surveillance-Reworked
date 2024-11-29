@@ -1,0 +1,221 @@
+{
+	"tempHash": "00863D042301F261",
+	"tbluHash": "00ECB6FAD7262D25",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"feed180dfa2bbc38",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aSecurityDevices",
+						[
+							{
+								"RemoveItemByValue": {
+									"ref": "98e0867e37dd65b3",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "6e7c4d4c59ec5810",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "5405aa59c4df148a",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "abb851c1e56258ae",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "c9a75ba84263da63",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "672255676a9e27b4",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "70ebe2faafd0f45c",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "97ca9d1126d80b66",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feed180dfa2bbc38",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 6 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feeda43837839bdd",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "feed180dfa2bbc38",
+							"externalScene": null,
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"feeda43837839bdd",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aCameras",
+						[
+							{
+								"RemoveItemByValue": {
+									"ref": "98e0867e37dd65b3",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "6e7c4d4c59ec5810",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "5405aa59c4df148a",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "abb851c1e56258ae",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "c9a75ba84263da63",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "672255676a9e27b4",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "70ebe2faafd0f45c",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "97ca9d1126d80b66",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe10f173c6d1ca",
+				{
+					"parent": "cafe0fcb45c415aa",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "feed180dfa2bbc38",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								{
+									"ref": "7938f17181a2b90d",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								},
+								{
+									"ref": "e3140015e2808d59",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								},
+								{
+									"ref": "67ea514efe9b7944",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								},
+								{
+									"ref": "080a7b26e5bfac9f",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								},
+								{
+									"ref": "1e4735c14a72a701",
+									"externalScene": "[assembly:/_pro/scenes/missions/bangkok/npc_ambient_guardroom.brick].pc_entitytype"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0fcb45c415aa",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

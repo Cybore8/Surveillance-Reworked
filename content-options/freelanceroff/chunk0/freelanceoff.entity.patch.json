@@ -1,0 +1,83 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe53719588c46c",
+				{
+					"parent": "fffffffffffffffe",
+					"name": "Recording Options",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe79341caf8e68",
+				{
+					"parent": "cafe53719588c46c",
+					"name": "EventChannelReceiver_ValueBool",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_valuebool.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeb7fe9fb98567",
+							"postInit": true
+						}
+					},
+					"events": {
+						"EventReceived": {
+							"SetTrue": [
+								"cafebe3059c28bc7",
+								"cafecb5f48119859"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb7fe9fb98567",
+				{
+					"parent": "cafe79341caf8e68",
+					"name": "EventToken_Sound_Evergreen_Inside_Mild_or_Hot",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventtokens_sound_generic.template?/eventtoken_sound_evergreen_inside_mild_or_hot.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventtokens_sound_generic.template?/eventtoken_sound_evergreen_inside_mild_or_hot.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebe3059c28bc7",
+				{
+					"parent": "cafe79341caf8e68",
+					"name": "Freelancer ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecb5f48119859",
+				{
+					"parent": "cafe53719588c46c",
+					"name": "No Color ValueBool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,121 @@
+{
+	"tempHash": "009AAFAC5EA2ABC8",
+	"tbluHash": "003032578D699567",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"bd7e993ebd6fab13",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aCameras",
+						[
+							{
+								"RemoveItemByValue": {
+									"ref": "f1e18e88c46f3fa0",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "6ce768f113ad21b2",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "256b6adf3488efe6",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "9e538541be9e2198",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bd7e993ebd6fab13",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "76852d1e21fb678f",
+							"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype",
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ce3f691ee4067954",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aCameras",
+						[
+							{
+								"RemoveItemByValue": {
+									"ref": "b5544632d7296905",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "f92671d591565714",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "c59c69832d793515",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "f61f1782a7287b33",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "64fde375752d1cce",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							},
+							{
+								"RemoveItemByValue": {
+									"ref": "4816e88651fdc240",
+									"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype"
+								}
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ce3f691ee4067954",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "eec6eeb4d10df64e",
+							"externalScene": "[assembly:/_pro/scenes/missions/hokkaido/location.brick].pc_entitytype",
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

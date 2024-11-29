@@ -1,0 +1,65 @@
+{
+	"tempHash": "006BCFD9D3272537",
+	"tbluHash": "006D474D1C17A0C3",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"fd2e6dcadfa89fb7",
+				{
+					"AddEventConnection": [
+						"Out01",
+						"TransmitEvent",
+						"cafe1716c6a4430e"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe721cd5e77ab1",
+				{
+					"parent": "cafe1716c6a4430e",
+					"name": "Cyb_TriggerExit",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Cyb_TriggerExit"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1716c6a4430e",
+				{
+					"parent": "cafe39ae6b6e5076",
+					"name": "Cyb_EventChannelTransmitter_void_01",
+					"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe721cd5e77ab1",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe39ae6b6e5076",
+				{
+					"parent": "c385da95eacbade4",
+					"name": "Void_TransmitReceive",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

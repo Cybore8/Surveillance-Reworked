@@ -1,0 +1,59 @@
+{
+	"tempHash": "00CCB0009E33B86A",
+	"tbluHash": "00BB6560F24B8B67",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafeb9d07afa08e7",
+				{
+					"parent": "8006d0dd0d7e6f51",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafecf76ac4f1b3a",
+				{
+					"parent": "cafeb9d07afa08e7",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "db34d95bb482bfb0",
+									"externalScene": "[assembly:/_pro/scenes/missions/golden/mission_gecko/scenario_gecko.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetU": [
+								"5d41f639ea6fb1fc",
+								"6babea4162d13fcc",
+								"7e9a1a764422e29d",
+								"39c6426740fb90ba"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

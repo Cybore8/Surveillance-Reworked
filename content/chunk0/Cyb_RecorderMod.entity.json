@@ -1,0 +1,1669 @@
+{
+	"tempHash": "00115F08CEC0C37A",
+	"tbluHash": "00E1EF69F3A6C239",
+	"rootEntity": "fffffffffffffffe",
+	"entities": {
+		"fffffffffffffffe": {
+			"parent": null,
+			"name": "Scene",
+			"factory": "[modules:/zspatialentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint"
+		},
+		"cafed4a8e70c81fd": {
+			"parent": "fffffffffffffffe",
+			"name": "Recording Network",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe2d6e326ec62a": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Exit & Erased Listener",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe45d47fd3367f": {
+			"parent": "cafe2d6e326ec62a",
+			"name": "Timer Delay On",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 1 }
+			},
+			"events": { "Out": { "Poll": ["cafe38e94654f89d"] } }
+		},
+		"cafe1ba381bba722": {
+			"parent": "cafe14cc81331fa4",
+			"name": "Cyb_RecorderDestroyed_N",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed_N"
+				}
+			}
+		},
+		"cafe14cc81331fa4": {
+			"parent": "cafe800be5421ee7",
+			"name": "Cyb_EventChannelReceiver_void_02 Destroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe1ba381bba722"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetFalse": ["cafe54c0e136d26a"] }
+			}
+		},
+		"cafe29c977439a1d": {
+			"parent": "cafe14cc81331fa4",
+			"name": "Erased ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe50819626ffad": {
+			"parent": "cafe3ee839306c82",
+			"name": "Cyb_TriggerExit",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_TriggerExit"
+				}
+			}
+		},
+		"cafe634f2d516a63": {
+			"parent": "cafe3ee839306c82",
+			"name": "Cyb_EventChannelReceiver_Exfiltrating",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe50819626ffad"
+				}
+			},
+			"events": { "EventReceived": { "Poll": ["cafe38e94654f89d"] } }
+		},
+		"cafe3ee839306c82": {
+			"parent": "cafe2d6e326ec62a",
+			"name": "Void_Receive ExitB",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafeac072f1afb19": {
+			"parent": "cafe5d6c93fde9e6",
+			"name": "C R Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe092239139480": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Recording",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe5c688b492742": {
+			"parent": "cafe5d6c93fde9e6",
+			"name": "Cyb_EventChannelReceiver_C_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafed72087180f41"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafe1af63b7693cf"] }
+			}
+		},
+		"cafe1af63b7693cf": {
+			"parent": "cafe5c688b492742",
+			"name": "C Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe5d6c93fde9e6": {
+			"parent": "cafe092239139480",
+			"name": "C",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafed72087180f41": {
+			"parent": "cafe5c688b492742",
+			"name": "Cyb_Recorded_C",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_Recorded_C" }
+			}
+		},
+		"cafede25ba180ddd": {
+			"parent": "cafee223e3aa0e83",
+			"name": "B R Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafebdf3092a9cfe": {
+			"parent": "cafee223e3aa0e83",
+			"name": "Cyb_EventChannelReceiver_B_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafea8def24311a3"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafefad09146b1fd"] }
+			}
+		},
+		"cafefad09146b1fd": {
+			"parent": "cafebdf3092a9cfe",
+			"name": "B Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafee223e3aa0e83": {
+			"parent": "cafe092239139480",
+			"name": "B",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafea8def24311a3": {
+			"parent": "cafebdf3092a9cfe",
+			"name": "Cyb_Recorded_B",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_Recorded_B" }
+			}
+		},
+		"cafe50da3b960b8d": {
+			"parent": "cafe34019381ae7c",
+			"name": "A R Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe4e2738f41f28": {
+			"parent": "cafe34019381ae7c",
+			"name": "Cyb_EventChannelReceiver_A_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafedcee7cf8807c"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafe3a8c6a534452"] }
+			}
+		},
+		"cafe3a8c6a534452": {
+			"parent": "cafe4e2738f41f28",
+			"name": "A Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe34019381ae7c": {
+			"parent": "cafe092239139480",
+			"name": "A",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafedcee7cf8807c": {
+			"parent": "cafe4e2738f41f28",
+			"name": "Cyb_Recorded_A",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_Recorded_A" }
+			}
+		},
+		"cafefc10ae0070b0": {
+			"parent": "cafe2929e153c1bb",
+			"name": "U R Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafecc757d9b0de7": {
+			"parent": "cafe2929e153c1bb",
+			"name": "Cyb_EventChannelReceiver_U_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9629a550436b"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafee629b7d8fba5"] }
+			}
+		},
+		"cafee629b7d8fba5": {
+			"parent": "cafecc757d9b0de7",
+			"name": "U Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe2929e153c1bb": {
+			"parent": "cafe092239139480",
+			"name": "U",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe9629a550436b": {
+			"parent": "cafecc757d9b0de7",
+			"name": "Cyb_Recorded_U",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_Recorded_U" }
+			}
+		},
+		"cafe3f3643c5dd62": {
+			"parent": "cafeef499dc4c352",
+			"name": "D R Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafeb8ee1463da55": {
+			"parent": "cafeef499dc4c352",
+			"name": "Cyb_EventChannelReceiver_D_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe0cc84474f36a"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafe5b02b0f6156f"] }
+			}
+		},
+		"cafe5b02b0f6156f": {
+			"parent": "cafeb8ee1463da55",
+			"name": "D Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafeef499dc4c352": {
+			"parent": "cafe092239139480",
+			"name": "D",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe0cc84474f36a": {
+			"parent": "cafeb8ee1463da55",
+			"name": "Cyb_Recorded_D",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_Recorded_D" }
+			}
+		},
+		"cafe2eecaded2793": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Umbrella - All Recordings",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "NONE"
+				},
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafe3a8c6a534452",
+						"cafefad09146b1fd",
+						"cafe1af63b7693cf",
+						"cafe5b02b0f6156f",
+						"cafee629b7d8fba5",
+						"cafe54c0e136d26a",
+						"cafef036620242bd",
+						"cafe13587453e673"
+					],
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnTrue": { "SetTrue": ["cafe9fac781d494f"] },
+				"OnFalse": {
+					"SetFalse": ["cafe9fac781d494f", "cafedb2103e6d7e4"],
+					"SetTrue": ["cafe7a35e05b362c"]
+				}
+			}
+		},
+		"cafe7c1b97057680": {
+			"parent": "cafe2d6e326ec62a",
+			"name": "Cyb_EventChannelReceiver_A_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe324b8dcc141c"
+				}
+			},
+			"events": {
+				"EventReceived": {
+					"SetFalse": ["cafef036620242bd"],
+					"Poll": ["cafec7c10a930813"]
+				}
+			}
+		},
+		"cafef036620242bd": {
+			"parent": "cafe7c1b97057680",
+			"name": "First Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafe324b8dcc141c": {
+			"parent": "cafe7c1b97057680",
+			"name": "Cyb_Recorded_First",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_Recorded_First"
+				}
+			}
+		},
+		"cafe9fac781d494f": {
+			"parent": "cafe2eecaded2793",
+			"name": "No Recordings ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe38e94654f89d": {
+			"parent": "cafe2eecaded2793",
+			"name": "Poll - No recordings Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9fac781d494f"
+				}
+			},
+			"events": { "PollTrue": { "In": ["cafeed75e1f4d018"] } }
+		},
+		"cafe54db1cf2b1bc": {
+			"parent": "cafe38e94654f89d",
+			"name": "Intact ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafeed75e1f4d018": {
+			"parent": "cafe38e94654f89d",
+			"name": " New Erase - IfWorking",
+			"factory": "[assembly:/_pro/design/logic/signalpipes.template?/signalpipe_conditional_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/signalpipes.template?/signalpipe_conditional_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_condition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe54db1cf2b1bc"
+				}
+			},
+			"events": { "Out": { "TransmitEvent": ["cafe26ae69beeb90"] } }
+		},
+		"cafe02d8b028b261": {
+			"parent": "cafe26ae69beeb90",
+			"name": "Cyb_NoRecordings",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_NoRecordings"
+				}
+			}
+		},
+		"cafe26ae69beeb90": {
+			"parent": "cafe2a100918a051",
+			"name": "Cyb_EventChannelTransmitter_WipeRecordings",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe02d8b028b261",
+					"postInit": true
+				}
+			}
+		},
+		"cafe2dc7cf15bc89": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Cyb_RecorderDestroyed",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed"
+				}
+			}
+		},
+		"cafe56fe1e889d01": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Recorder Destroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe2dc7cf15bc89"
+				}
+			},
+			"events": {
+				"EventReceived": {
+					"Poll": [
+						"cafebfdc770b2a4f",
+						"cafedca81a4636f6",
+						"cafe1980fe98d147",
+						"cafe0e9847d8153f",
+						"cafe723f3298bb8e",
+						"cafe8c6009469fbc"
+					]
+				}
+			}
+		},
+		"cafe9368bf3cf5d8": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Erased Poll - Recordings Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9fac781d494f"
+				}
+			},
+			"events": { "PollTrue": { "Trigger": ["cafe333fb818b71f"] } }
+		},
+		"cafe333fb818b71f": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Event_Cyb_Cyb_SurvDisabled",
+			"factory": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_SurvDisabled"
+				},
+				"m_bTriggerOnValue": { "type": "bool", "value": true },
+				"m_bSendDirectly": { "type": "bool", "value": false }
+			}
+		},
+		"cafebfdc770b2a4f": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Erased Poll - Unrecoverable Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafe5dbf54af0d50",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					}
+				}
+			},
+			"events": { "PollFalse": { "Poll": ["cafe9368bf3cf5d8"] } }
+		},
+		"cafe0ad12b3190cc": {
+			"parent": "cafe99465da3701c",
+			"name": "Cyb_EventChannelReceiver_void_02 Destroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe3dd8efbd16cb"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetFalse": ["cafe5b02b0f6156f"] }
+			}
+		},
+		"cafeda845f3ee285": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Destroyed Received",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe3dd8efbd16cb": {
+			"parent": "cafe99465da3701c",
+			"name": "Cyb_RecorderDestroyed_D",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed_D"
+				}
+			}
+		},
+		"cafe99465da3701c": {
+			"parent": "cafeda845f3ee285",
+			"name": "D",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe98cf32342111": {
+			"parent": "cafe2b1df1d48be6",
+			"name": "Cyb_EventChannelReceiver_void_02 Destroyed U",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafef98a4ff22d28"
+				}
+			},
+			"events": {
+				"EventReceived": {
+					"SetFalse": ["cafee629b7d8fba5"],
+					"Trigger": ["cafe3be5042eee03"]
+				}
+			}
+		},
+		"cafef98a4ff22d28": {
+			"parent": "cafe2b1df1d48be6",
+			"name": "Cyb_RecorderDestroyed_U",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed_U"
+				}
+			}
+		},
+		"cafe2b1df1d48be6": {
+			"parent": "cafeda845f3ee285",
+			"name": "U",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe78dba9452404": {
+			"parent": "cafec2f7ad626049",
+			"name": "Cyb_EventChannelReceiver_void_02 Destroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe1f487bd47583"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetFalse": ["cafe1af63b7693cf"] }
+			}
+		},
+		"cafe1f487bd47583": {
+			"parent": "cafec2f7ad626049",
+			"name": "Cyb_RecorderDestroyed_C",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed_C"
+				}
+			}
+		},
+		"cafec2f7ad626049": {
+			"parent": "cafeda845f3ee285",
+			"name": "C",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe4acf40c002b7": {
+			"parent": "cafea05b4f1f633e",
+			"name": "Cyb_EventChannelReceiver_void_02 Destroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe7a9027675d4c"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetFalse": ["cafefad09146b1fd"] }
+			}
+		},
+		"cafe7a9027675d4c": {
+			"parent": "cafea05b4f1f633e",
+			"name": "Cyb_RecorderDestroyed_B",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed_B"
+				}
+			}
+		},
+		"cafea05b4f1f633e": {
+			"parent": "cafeda845f3ee285",
+			"name": "B",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe1baac9e02740": {
+			"parent": "cafe1066e6b36993",
+			"name": "Cyb_EventChannelReceiver_void_02 Destroyed",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe1ef9612f808c"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetFalse": ["cafe3a8c6a534452"] }
+			}
+		},
+		"cafe1ef9612f808c": {
+			"parent": "cafe1066e6b36993",
+			"name": "Cyb_RecorderDestroyed_A",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_RecorderDestroyed_A"
+				}
+			}
+		},
+		"cafe1066e6b36993": {
+			"parent": "cafeda845f3ee285",
+			"name": "A",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafebbb2558c62f8": {
+			"parent": "cafe1baac9e02740",
+			"name": "A Destroyed ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe3be5042eee03": {
+			"parent": "cafe2b1df1d48be6",
+			"name": "Event_Cyb_Cyb_SurvDisabled",
+			"factory": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_SurvDisabledU"
+				},
+				"m_bTriggerOnValue": { "type": "bool", "value": true },
+				"m_bSendDirectly": { "type": "bool", "value": false }
+			}
+		},
+		"cafe356c2a7d07a2": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Messages",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafea57446480550": {
+			"parent": "cafe356c2a7d07a2",
+			"name": "Active VitalInfoBarMessage - Recorder Disabled",
+			"factory": "[modules:/zvitalinfobarmessageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zvitalinfobarmessageentity.class].pc_entityblueprint",
+			"properties": {
+				"m_TextLine": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00751865136EC00C",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafe4f664b1fbade": {
+			"parent": "cafe356c2a7d07a2",
+			"name": "VitalInfoBarMessage - Evidence Deleted",
+			"factory": "[modules:/zvitalinfobarmessageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zvitalinfobarmessageentity.class].pc_entityblueprint",
+			"properties": {
+				"m_TextLine": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "00F7BDF04C1CD620",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafe5558d385d6f8": {
+			"parent": "cafe356c2a7d07a2",
+			"name": "Poll - Messages Bool 1",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe7f35905e16d0"
+				}
+			},
+			"events": {
+				"PollFalse": { "SendMessage": ["cafea57446480550"] },
+				"PollTrue": { "Poll": ["cafe812b134a6571"] }
+			}
+		},
+		"cafe7f35905e16d0": {
+			"parent": "cafe5558d385d6f8",
+			"name": "Evidence ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe287173592cfe": {
+			"parent": "cafe356c2a7d07a2",
+			"name": "Umbrella - Recordings",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "NONE"
+				},
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafe3a8c6a534452",
+						"cafefad09146b1fd",
+						"cafe1af63b7693cf",
+						"cafe5b02b0f6156f",
+						"cafe54c0e136d26a",
+						"cafee629b7d8fba5",
+						"cafe13587453e673"
+					],
+					"postInit": true
+				}
+			},
+			"events": { "OnFalse": { "SetTrue": ["cafe7f35905e16d0"] } }
+		},
+		"cafe812b134a6571": {
+			"parent": "cafe356c2a7d07a2",
+			"name": "Poll - Messages Bool 2",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe9fac781d494f"
+				}
+			},
+			"events": {
+				"PollFalse": { "SendMessage": ["cafea57446480550"] },
+				"PollTrue": {
+					"SendMessage": ["cafe4f664b1fbade"],
+					"SetTrue": ["cafedb2103e6d7e4"],
+					"SetFalse": ["cafe7f35905e16d0", "cafe7a35e05b362c"]
+				}
+			}
+		},
+		"cafe5a9ac12967d0": {
+			"parent": "cafe1b6f582e4057",
+			"name": "Icon",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe1b6f582e4057": {
+			"parent": "fffffffffffffffe",
+			"name": "Recorder Alpha",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafea259c765bef9": {
+			"parent": "cafe1b6f582e4057",
+			"name": "SA Icon Alpha",
+			"factory": "[modules:/zhm5propertyvalueentity_float32.class].pc_entitytype",
+			"blueprint": "[modules:/zhm5propertyvalueentity_float32.class].pc_entityblueprint",
+			"properties": {
+				"m_sPropertyName": {
+					"type": "ZString",
+					"value": "m_fAlpha"
+				},
+				"m_Entity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "ce955abf4f33fcf9",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					},
+					"postInit": true
+				}
+			}
+		},
+		"cafe082c9b1b33a2": {
+			"parent": "cafe28a57d49c9c0",
+			"name": "ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe28a57d49c9c0": {
+			"parent": "cafe1b6f582e4057",
+			"name": "Umbrella Hide",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ALL"
+				},
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafef77eb0d4283d",
+						"cafedb2103e6d7e4",
+						"cafe9f52df7e64b9",
+						"cafe7d08467a4305",
+						{
+							"ref": "cafe935128d42d48",
+							"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+						}
+					],
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"Set": [
+						{
+							"ref": "cafea259c765bef9",
+							"value": { "type": "float32", "value": 50 }
+						}
+					]
+				}
+			}
+		},
+		"cafebf1c87957c05": {
+			"parent": "cafe1b6f582e4057",
+			"name": "Cyb_EventChannelReceiver_A_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe6867a934b7bd"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafef77eb0d4283d"] }
+			}
+		},
+		"cafef77eb0d4283d": {
+			"parent": "cafebf1c87957c05",
+			"name": "First Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe6867a934b7bd": {
+			"parent": "cafebf1c87957c05",
+			"name": "Cyb_Recorded_First",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_Recorded_First"
+				}
+			}
+		},
+		"cafe0696cf3bec13": {
+			"parent": "cafe8b9ead3050d8",
+			"name": "ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe8b9ead3050d8": {
+			"parent": "cafe1b6f582e4057",
+			"name": "Umbrella Show",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ALL"
+				},
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafef77eb0d4283d",
+						"cafe7a35e05b362c",
+						"cafe9f52df7e64b9",
+						"cafe7d08467a4305",
+						{
+							"ref": "cafe935128d42d48",
+							"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+						}
+					],
+					"postInit": true
+				}
+			},
+			"events": {
+				"OnTrue": {
+					"Set": [
+						{
+							"ref": "cafea259c765bef9",
+							"value": { "type": "float32", "value": 100 }
+						}
+					]
+				}
+			}
+		},
+		"cafe7a35e05b362c": {
+			"parent": "cafe5a9ac12967d0",
+			"name": "HasRecordings ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafedb2103e6d7e4": {
+			"parent": "cafe5a9ac12967d0",
+			"name": "NoRecordings ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafeb264f37302da": {
+			"parent": "cafeb401f992ba86",
+			"name": "Cyb_EventChannelReceiver_N_Record",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe124c05f8ceef"
+				}
+			},
+			"events": {
+				"EventReceived": { "SetTrue": ["cafe54c0e136d26a"] }
+			}
+		},
+		"cafe54c0e136d26a": {
+			"parent": "cafeb264f37302da",
+			"name": "N Recorded ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafeb401f992ba86": {
+			"parent": "cafe092239139480",
+			"name": "N",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe124c05f8ceef": {
+			"parent": "cafeb264f37302da",
+			"name": "Cyb_Recorded_N",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_Recorded_N" }
+			}
+		},
+		"cafe800be5421ee7": {
+			"parent": "cafeda845f3ee285",
+			"name": "N",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafea5d5594c57f3": {
+			"parent": "cafe1980fe98d147",
+			"name": "Event",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe1980fe98d147": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Erased Poll - Difficulty Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafe7abd2e37ae54",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					}
+				}
+			},
+			"events": {
+				"PollFalse": {
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
+				}
+			}
+		},
+		"cafed2f98fede0e1": {
+			"parent": "cafe0e9847d8153f",
+			"name": "Event",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe0e9847d8153f": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Erased Poll - Freelancer Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafebe3059c28bc7",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					}
+				}
+			},
+			"events": {
+				"PollTrue": {
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
+				}
+			}
+		},
+		"cafed5d48fd44a85": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Options",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe299567276f47": {
+			"parent": "cafe2b0d9d8e0469",
+			"name": "ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe4ef706f14192": {
+			"parent": "cafed5d48fd44a85",
+			"name": "Poll - Once Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe7114b1de5f77"
+				}
+			},
+			"events": {
+				"PollTrue": {
+					"SetFalse": ["cafe7114b1de5f77"],
+					"Poll": ["cafe1cfe76221346"]
+				}
+			}
+		},
+		"cafe7114b1de5f77": {
+			"parent": "cafe4ef706f14192",
+			"name": "Once Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafe2b0d9d8e0469": {
+			"parent": "cafed5d48fd44a85",
+			"name": "Umbrella",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				},
+				"m_bFireOnLevelStart": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "cafecb5f48119859",
+							"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafe2ce0c898a1d5",
+							"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafe420df093bb82",
+							"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+						},
+						{
+							"ref": "cafe420df093bb82",
+							"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+						}
+					]
+				}
+			}
+		},
+		"cafe9a3c6d255f9e": {
+			"parent": "cafed5d48fd44a85",
+			"name": "Cyb_EventChannelTransmitter_NoColors",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe68897ec7d180",
+					"postInit": true
+				}
+			}
+		},
+		"cafe68897ec7d180": {
+			"parent": "cafe9a3c6d255f9e",
+			"name": "Cyb_NoColors",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": { "type": "ZString", "value": "Cyb_NoColors" }
+			}
+		},
+		"cafef79271eb6a4d": {
+			"parent": "cafed5d48fd44a85",
+			"name": "Intro",
+			"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+			"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+			"properties": {
+				"m_eEvent": {
+					"type": "EGameEventType",
+					"value": "GET_IntroCutStart"
+				}
+			},
+			"events": { "EventOccurred": { "Poll": ["cafe4ef706f14192"] } }
+		},
+		"cafe1cfe76221346": {
+			"parent": "cafed5d48fd44a85",
+			"name": "Poll - Colors Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe2b0d9d8e0469"
+				}
+			},
+			"events": {
+				"PollTrue": {
+					"TransmitEvent": ["cafe9a3c6d255f9e"],
+					"SendMessagex": ["cafe4f664b1fbade"]
+				}
+			}
+		},
+		"cafe08dedb343950": {
+			"parent": "cafe2a5cb3229a30",
+			"name": "Active VitalInfoBarMessage - Combat",
+			"factory": "[modules:/zvitalinfobarmessageentity.class].pc_entitytype",
+			"blueprint": "[modules:/zvitalinfobarmessageentity.class].pc_entityblueprint",
+			"properties": {
+				"m_TextLine": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "0051767EFEF7FA68",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafe086686fb9126": {
+			"parent": "cafe2a5cb3229a30",
+			"name": "Event",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe2a5cb3229a30": {
+			"parent": "cafed5d48fd44a85",
+			"name": "Poll - Difficulty Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafecb5f48119859",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					}
+				}
+			},
+			"events": {
+				"PollTrue": {
+					"TransmitEvent": ["cafe9a3c6d255f9e"],
+					"SendMessage": ["cafe4f664b1fbade"]
+				}
+			}
+		},
+		"cafe78c7a48b301e": {
+			"parent": "cafe6d513f3f1f3c",
+			"name": "Cyb_DisableAllCams",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_DisableAllCams"
+				}
+			}
+		},
+		"cafe6d513f3f1f3c": {
+			"parent": "cafe2a5cb3229a30",
+			"name": "Cyb_EventChannelTransmitter_DisableAllCams",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe78c7a48b301e",
+					"postInit": true
+				}
+			}
+		},
+		"cafedca81a4636f6": {
+			"parent": "cafe356c2a7d07a2",
+			"name": "Poll - Disable Message",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe2b0d9d8e0469"
+				}
+			},
+			"events": { "PollFalse": { "Poll": ["cafe5558d385d6f8"] } }
+		},
+		"cafedfb9d1728a81": {
+			"parent": "cafedca81a4636f6",
+			"name": "Messages ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafec7c10a930813": {
+			"parent": "cafe2eecaded2793",
+			"name": "Recorded Poll - Unrecoverable Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafe5dbf54af0d50",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					}
+				}
+			},
+			"events": { "PollTrue": { "SetTrue": ["cafe13587453e673"] } }
+		},
+		"cafe13587453e673": {
+			"parent": "cafec7c10a930813",
+			"name": "Unrecoverable ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe9f52df7e64b9": {
+			"parent": "cafe1b6f582e4057",
+			"name": "InvertedCondition",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe2b0d9d8e0469",
+					"postInit": true
+				}
+			}
+		},
+		"cafeac193de32979": {
+			"parent": "cafe723f3298bb8e",
+			"name": "Event",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe723f3298bb8e": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Erased Poll - Camera Grid Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafe420df093bb82",
+						"externalScene": "[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+					}
+				}
+			},
+			"events": {
+				"PollTrue": {
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					],
+					"SendMessagex": ["cafe08dedb343950"]
+				}
+			}
+		},
+		"cafea0fb120ed980": {
+			"parent": "cafeaf9faa6c0cfc",
+			"name": "Cyb_DisableAllCams",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_DisableAllCams"
+				}
+			}
+		},
+		"cafeaf9faa6c0cfc": {
+			"parent": "cafe2a100918a051",
+			"name": "Cyb_EventChannelTransmitter_DisableAllCams",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafea0fb120ed980",
+					"postInit": true
+				}
+			}
+		},
+		"cafe8ae8691e1c63": {
+			"parent": "cafed4a8e70c81fd",
+			"name": "Objectives",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafef8d3a6195f28": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 1",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "4447eddf-6c11-4ed8-b68f-103a26649271"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafedb3029247a9a": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Big Brother Objectives Active - ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafe8c6009469fbc": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Erased Poll - Objectives Bool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafedb3029247a9a"
+				}
+			},
+			"events": {
+				"PollTrue": {
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
+				}
+			}
+		},
+		"cafe2a100918a051": {
+			"parent": "cafe56fe1e889d01",
+			"name": "Event Transmitters",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafed85b3f282168": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 4",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "b295b49d-a6da-4d32-ac23-76b6b44c367f"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafe68f6ce7ff2bf": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 3",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "63b24243-ffb0-48ce-b40f-ed1fc1cfa3cb"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafee2ede39fbc1f": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 7",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "e8cc0242-a468-45c2-82de-1da88a4b5bc2"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafe842878a4d4eb": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 2",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "b2b11b88-2cb3-41f2-86b7-4ae40f270bc3"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafe7f4159cf450f": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 5",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "c4f2fb1d-ccef-49fb-9f18-433b97d068c8"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafec50136c32a98": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Objective Cam 6",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "526101f2-c959-437f-89ec-e24d2213cbcb"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
+		},
+		"cafe8a0ad70ad9c3": {
+			"parent": "cafed6c1b1d94c6b",
+			"name": "Cyb_FreelancerCamCheck",
+			"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+			"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "Cyb_FreelancerCamCheck"
+				}
+			}
+		},
+		"cafed40cd52de620": {
+			"parent": "cafed6c1b1d94c6b",
+			"name": "Cyb_EventChannelReceiver_FreelancerExf",
+			"factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rChannelToken": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe8a0ad70ad9c3"
+				}
+			},
+			"events": { "EventReceived": { "Poll": ["cafe38e94654f89d"] } }
+		},
+		"cafed6c1b1d94c6b": {
+			"parent": "cafe2d6e326ec62a",
+			"name": "Void_Receive ExitFreelance",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe5d3af1afc225": {
+			"parent": "cafe1b6f582e4057",
+			"name": "Time ObjectiveStateEntity",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "01cc939a-93d4-4b19-84d5-244520c805b0"
+				}
+			},
+			"events": { "OnActive": { "SetFalse": ["cafe7d08467a4305"] } }
+		},
+		"cafe7d08467a4305": {
+			"parent": "cafe5d3af1afc225",
+			"name": "Time_Objective_Not Active",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [
+		"[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+	],
+	"subType": "scene",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": [
+		{
+			"parent": "cafef79271eb6a4d",
+			"name": "Notes",
+			"text": "\t\"blueprint\": \"[modules:/zgameeventlistenerentity.class].pc_entityblueprint\",\n\t\"properties\": {\n\t\t\"m_eEvent\": {\n\t\t\t\"type\": \"EGameEventType\",\n\t\t\t\"value\": \"GET_IntroCutStart\"\n\t\t}\n\t},"
+		}
+	]
+}

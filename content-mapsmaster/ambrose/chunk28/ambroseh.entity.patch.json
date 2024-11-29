@@ -1,0 +1,86 @@
+{
+	"tempHash": "008075B16E3D2D49",
+	"tbluHash": "0030442EA79AF67D",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafe5f75c5d7c7bf",
+				{
+					"parent": "cafe464a3a04d189",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "e4134282d09f5a3a",
+									"externalScene": "[assembly:/_pro/scenes/missions/rocky/scenario_dugong.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": { "SetB": ["395a46b67d289bb9"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe464a3a04d189",
+				{
+					"parent": "8363d7f1c98fbaf2",
+					"name": "Recording Network Master",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe74b22eedb855",
+				{
+					"parent": "cafe464a3a04d189",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "1cf74116e874924b",
+									"externalScene": "[assembly:/_pro/scenes/missions/rocky/scenario_dugong.brick].pc_entitytype",
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": { "SetA": ["f8b4708cacc2d31d"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

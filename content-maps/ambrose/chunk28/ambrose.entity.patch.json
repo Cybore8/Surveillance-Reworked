@@ -1,0 +1,210 @@
+{
+	"tempHash": "00D4CB4858E849BE",
+	"tbluHash": "003C5911B9591221",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"e4134282d09f5a3a",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 6 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e4134282d09f5a3a",
+				{ "RemoveAllEventConnectionsForEvent": "OnErased" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e4134282d09f5a3a",
+				{ "RemoveAllEventConnectionsForEvent": "OnEmpDisable" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e4134282d09f5a3a",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"e4134282d09f5a3a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d2fc81f1ddaea47f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "e4134282d09f5a3a",
+							"externalScene": null,
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"d2fc81f1ddaea47f",
+				{ "SetPropertyPostInit": ["m_rEnabled", true] }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"1cf74116e874924b",
+				{
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 5 }
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"1cf74116e874924b",
+				{ "RemoveAllEventConnectionsForEvent": "OnErased" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"1cf74116e874924b",
+				{ "RemoveAllEventConnectionsForEvent": "OnEmpDisable" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"1cf74116e874924b",
+				{
+					"AddEventConnection": [
+						"OnFalse",
+						"TurnOff",
+						"1cf74116e874924b"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"269c8df00b6e1fcd",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_rEnabled",
+						"value": {
+							"ref": "1cf74116e874924b",
+							"externalScene": null,
+							"exposedEntity": "IsWorking"
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"269c8df00b6e1fcd",
+				{ "SetPropertyPostInit": ["m_rEnabled", true] }
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe23c30255e6bb",
+				{
+					"parent": "cafea6fe2b3ec534",
+					"name": "Recorder B",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "e4134282d09f5a3a",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetB": [
+								"351631eaa627328b",
+								"143bfd719b98fa6c",
+								"294315c0ce44ab68"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea6fe2b3ec534",
+				{
+					"parent": "0e0c13f19a252a36",
+					"name": "Recording Network",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebee981acd7e1",
+				{
+					"parent": "cafea6fe2b3ec534",
+					"name": "Recorder A",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eEvaluation": {
+							"type": "ZValueBool_Operation_Signal.EEvaluationType",
+							"value": "ALL"
+						},
+						"m_bFireOnLevelStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								{
+									"ref": "1cf74116e874924b",
+									"externalScene": null,
+									"exposedEntity": "IsWorking"
+								}
+							]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"SetA": [
+								"345e5450811bb6c3",
+								"f51cb752bc4e1302",
+								"66f23cf2526622d7"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
