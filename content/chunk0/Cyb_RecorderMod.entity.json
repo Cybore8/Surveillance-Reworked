@@ -1107,7 +1107,10 @@
 			},
 			"events": {
 				"PollFalse": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"]
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
 				}
 			}
 		},
@@ -1133,7 +1136,10 @@
 			},
 			"events": {
 				"PollTrue": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"]
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
 				}
 			}
 		},
@@ -1411,7 +1417,10 @@
 			},
 			"events": {
 				"PollTrue": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"],
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					],
 					"SendMessagex": ["cafe08dedb343950"]
 				}
 			}
@@ -1484,7 +1493,10 @@
 			},
 			"events": {
 				"PollTrue": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"]
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
 				}
 			}
 		},
@@ -1634,13 +1646,36 @@
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
 			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafe7557be1f3605": {
+			"parent": "cafe8ae8691e1c63",
+			"name": "Freelancer",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafeb2aab2f8cce4": {
+			"parent": "cafe7557be1f3605",
+			"name": "Objective Freel 1",
+			"factory": "[modules:/zobjectivestateentity.class].pc_entitytype",
+			"blueprint": "[modules:/zobjectivestateentity.class].pc_entityblueprint",
+			"properties": {
+				"m_ObjectviveId": {
+					"type": "ZGuid",
+					"value": "081a1670-afd1-4e1f-8af8-6db4470392a2"
+				}
+			},
+			"events": {
+				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
+			}
 		}
 	},
 	"propertyOverrides": [],
 	"overrideDeletes": [],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
-	"externalScenes": ["[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"],
+	"externalScenes": [
+		"[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+	],
 	"subType": "scene",
 	"quickEntityVersion": 3.1,
 	"extraFactoryDependencies": [],
