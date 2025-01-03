@@ -1,10 +1,10 @@
 {
-	"version": "1.2.0",
+	"version": "1.0.1",
 	"id": "Cybore.RecordersPlus",
 	"name": "Surveillance System Reworked",
 	"description": "Separate surveillance cameras and their respective linked recorders.",
 	"authors": ["Cyb"],
-	"frameworkVersion": "2.33.20",
+	"frameworkVersion": "2.33.23",
 	"loadAfter": ["GlacierOrganisation.CommunityPatches", "musicalmushr00m.bangkok-recorder"],
 	"contentFolders": ["content"],
 	"dependencies": [
