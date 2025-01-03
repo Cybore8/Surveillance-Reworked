@@ -14,7 +14,10 @@
 			"SubEntityOperation": [
 				"aecc0f00004ed389",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnRecorded", "Trigger"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnRecorded",
+						"Trigger"
+					]
 				}
 			]
 		},
@@ -22,7 +25,11 @@
 			"SubEntityOperation": [
 				"aecc0f00004ed389",
 				{
-					"AddEventConnection": ["OnRecorded", "Triggerx", "c9db46ca759961c2"]
+					"AddEventConnection": [
+						"OnRecorded",
+						"Triggerx",
+						"c9db46ca759961c2"
+					]
 				}
 			]
 		},
@@ -30,7 +37,11 @@
 			"SubEntityOperation": [
 				"aecc0f00004ed389",
 				{
-					"AddEventConnection": ["OnRecorded", "Poll", "cafe2adf781efcac"]
+					"AddEventConnection": [
+						"OnRecorded",
+						"Poll",
+						"cafe2adf781efcac"
+					]
 				}
 			]
 		},
@@ -38,7 +49,11 @@
 			"SubEntityOperation": [
 				"aecc0f00004ed389",
 				{
-					"AddEventConnection": ["OnHandleBreakRecorderx", "In", "e9415986954e4ad3"]
+					"AddEventConnection": [
+						"OnHandleBreakRecorderx",
+						"In",
+						"e9415986954e4ad3"
+					]
 				}
 			]
 		},
@@ -46,7 +61,10 @@
 			"SubEntityOperation": [
 				"5ec4c1fbb97009c5",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnTurnOn", "In"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTurnOn",
+						"In"
+					]
 				}
 			]
 		},
@@ -54,7 +72,11 @@
 			"SubEntityOperation": [
 				"5ec4c1fbb97009c5",
 				{
-					"AddEventConnection": ["OnTurnOn", "Inx", "92414a5123f8053c"]
+					"AddEventConnection": [
+						"OnTurnOn",
+						"Inx",
+						"92414a5123f8053c"
+					]
 				}
 			]
 		},
@@ -62,7 +84,11 @@
 			"SubEntityOperation": [
 				"5ec4c1fbb97009c5",
 				{
-					"AddEventConnection": ["OnTurnOn", "Poll", "cafee842c46d648d"]
+					"AddEventConnection": [
+						"OnTurnOn",
+						"Poll",
+						"cafee842c46d648d"
+					]
 				}
 			]
 		},
@@ -70,7 +96,10 @@
 			"SubEntityOperation": [
 				"b234fd178266fb5c",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["PollTrue", "In"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"PollTrue",
+						"In"
+					]
 				}
 			]
 		},
@@ -78,7 +107,11 @@
 			"SubEntityOperation": [
 				"b234fd178266fb5c",
 				{
-					"AddEventConnection": ["PollTrue", "Break", "9d19689f1dff3049"]
+					"AddEventConnection": [
+						"PollTrue",
+						"Break",
+						"9d19689f1dff3049"
+					]
 				}
 			]
 		},
@@ -86,7 +119,10 @@
 			"SubEntityOperation": [
 				"980fab05c7454633",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["Out", "Destroy"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"Out",
+						"Destroy"
+					]
 				}
 			]
 		},
@@ -94,18 +130,28 @@
 			"SubEntityOperation": [
 				"980fab05c7454633",
 				{
-					"RemoveEventConnection": ["Out", "In", "fa40f69eaa02b0d0"]
+					"RemoveEventConnection": [
+						"Out",
+						"In",
+						"fa40f69eaa02b0d0"
+					]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": ["980fab05c7454633", { "AddEventConnection": ["Out", "In", "cafe560c16f48576"] }]
+			"SubEntityOperation": [
+				"980fab05c7454633",
+				{ "AddEventConnection": ["Out", "In", "cafe560c16f48576"] }
+			]
 		},
 		{
 			"SubEntityOperation": [
 				"e01bc65dd2be390e",
 				{
-					"AddProperty": ["m_network", { "type": "int32", "value": 1 }]
+					"AddProperty": [
+						"m_network",
+						{ "type": "int32", "value": 1 }
+					]
 				}
 			]
 		},
@@ -1415,7 +1461,10 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb054389ded88", "cafe88e16c25113d"],
+							"value": [
+								"cafeb054389ded88",
+								"cafe88e16c25113d"
+							],
 							"postInit": true
 						}
 					},
@@ -1465,7 +1514,10 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb054389ded88", "cafe19a6925a51ef"],
+							"value": [
+								"cafeb054389ded88",
+								"cafe19a6925a51ef"
+							],
 							"postInit": true
 						}
 					},
@@ -1497,7 +1549,10 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb054389ded88", "cafe798a070ca687"],
+							"value": [
+								"cafeb054389ded88",
+								"cafe798a070ca687"
+							],
 							"postInit": true
 						}
 					},
@@ -1529,14 +1584,20 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb054389ded88", "cafeff4e95ba387e"],
+							"value": [
+								"cafeb054389ded88",
+								"cafeff4e95ba387e"
+							],
 							"postInit": true
 						}
 					},
 					"events": {
 						"OnTrue": {
 							"TransmitEvent": ["cafea2d8c8fe52d7"],
-							"SetFalse": ["cafe2681e9d17c77", "cafe18f302b29785"]
+							"SetFalse": [
+								"cafe2681e9d17c77",
+								"cafe18f302b29785"
+							]
 						}
 					}
 				}
@@ -1561,7 +1622,10 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb054389ded88", "cafe9589d51ff672"],
+							"value": [
+								"cafeb054389ded88",
+								"cafe9589d51ff672"
+							],
 							"postInit": true
 						}
 					},
@@ -1666,7 +1730,12 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe88e16c25113d", "cafe087523ab04e8", "cafe4f7c807d8d89", "835fbe9ae98df6ec"],
+							"value": [
+								"cafe88e16c25113d",
+								"cafe087523ab04e8",
+								"cafe4f7c807d8d89",
+								"835fbe9ae98df6ec"
+							],
 							"postInit": true
 						}
 					},
@@ -1698,7 +1767,12 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe19a6925a51ef", "cafe47c37490a06f", "cafe4f7c807d8d89", "835fbe9ae98df6ec"],
+							"value": [
+								"cafe19a6925a51ef",
+								"cafe47c37490a06f",
+								"cafe4f7c807d8d89",
+								"835fbe9ae98df6ec"
+							],
 							"postInit": true
 						}
 					},
@@ -1730,7 +1804,12 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe9589d51ff672", "cafe18541b6d2329", "cafe4f7c807d8d89", "835fbe9ae98df6ec"],
+							"value": [
+								"cafe9589d51ff672",
+								"cafe18541b6d2329",
+								"cafe4f7c807d8d89",
+								"835fbe9ae98df6ec"
+							],
 							"postInit": true
 						}
 					},
@@ -1762,7 +1841,12 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeff4e95ba387e", "cafe2681e9d17c77", "cafe4f7c807d8d89", "835fbe9ae98df6ec"],
+							"value": [
+								"cafeff4e95ba387e",
+								"cafe2681e9d17c77",
+								"cafe4f7c807d8d89",
+								"835fbe9ae98df6ec"
+							],
 							"postInit": true
 						}
 					},
@@ -1808,7 +1892,12 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe798a070ca687", "cafe75862a81d727", "cafe4f7c807d8d89", "835fbe9ae98df6ec"],
+							"value": [
+								"cafe798a070ca687",
+								"cafe75862a81d727",
+								"cafe4f7c807d8d89",
+								"835fbe9ae98df6ec"
+							],
 							"postInit": true
 						}
 					},
@@ -1835,12 +1924,7 @@
 							"value": "cafe6c0c0928928c"
 						}
 					},
-					"events": {
-						"Out": {
-							"Erase": ["aecc0f00004ed389"],
-							"In": ["fa40f69eaa02b0d0"]
-						}
-					}
+					"events": { "Out": { "Poll": ["cafe18d39b5ce1f1"] } }
 				}
 			]
 		},
@@ -2093,7 +2177,12 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafeb8a2f345f479", "cafeb4aa28732fcf", "cafe4f7c807d8d89", "835fbe9ae98df6ec"],
+							"value": [
+								"cafeb8a2f345f479",
+								"cafeb4aa28732fcf",
+								"cafe4f7c807d8d89",
+								"835fbe9ae98df6ec"
+							],
 							"postInit": true
 						}
 					},
@@ -2159,7 +2248,10 @@
 						"PollFalse": { "Break": ["9d19689f1dff3049"] },
 						"PollTrue": {
 							"Break": ["9d19689f1dff3049"],
-							"TransmitEvent": ["cafe78501b5b7be6", "cafe740e7ffc287b"],
+							"TransmitEvent": [
+								"cafe78501b5b7be6",
+								"cafe740e7ffc287b"
+							],
 							"Trigger": ["cafe01b99e2519bd"]
 						}
 					}
@@ -2612,6 +2704,44 @@
 							"type": "ZString",
 							"value": "Cyb_RecorderDestroyed_U"
 						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe18d39b5ce1f1",
+				{
+					"parent": "cafed1a8db742ceb",
+					"name": "Poll - Once Bool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeff8716372041"
+						}
+					},
+					"events": {
+						"PollTrue": {
+							"SetFalse": ["cafeff8716372041"],
+							"Erase": ["aecc0f00004ed389"],
+							"In": ["fa40f69eaa02b0d0"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeff8716372041",
+				{
+					"parent": "cafe18d39b5ce1f1",
+					"name": "Once Bool",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": true }
 					}
 				}
 			]
