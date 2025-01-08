@@ -29,6 +29,26 @@
 			"UI_CYB_SURVEYERASEDC": "Recorder Deactivated",
 			"UI_CYB_SURVMODON": "Mod - Surveillance On",
 			"UI_CYB_SURVMODOFF": "Mod - Surveillance Off"
+		},
+		"french": {
+			"UI_CYB_SURVEYERASEDA": "Enregistreur Vidéo Désactivé",
+			"UI_CYB_SURVEYERASEDB": "Enregistrement Effacé"
+		},
+		"italian": {
+			"UI_CYB_SURVEYERASEDA": "Registratore Disabilitato",
+			"UI_CYB_SURVEYERASEDB": "Prove Eliminate"
+		},
+		"german": {
+			"UI_CYB_SURVEYERASEDA": "Recorder Deaktiviert",
+			"UI_CYB_SURVEYERASEDB": "Beweis Gelöscht"
+		},
+		"spanish": {
+			"UI_CYB_SURVEYERASEDA": "Grabadora Desactivada",
+			"UI_CYB_SURVEYERASEDB": "Evidencia Eliminada"
+		},
+		"russian": {
+			"UI_CYB_SURVEYERASEDA": "Сервер Отключен",
+			"UI_CYB_SURVEYERASEDB": "Улики Стёрты"
 		}
 	},
 	"options": [
