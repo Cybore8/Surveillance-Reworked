@@ -529,7 +529,13 @@
 					"value": "cafe9fac781d494f"
 				}
 			},
-			"events": { "PollTrue": { "Trigger": ["cafe333fb818b71f"] } }
+			"events": {
+				"PollTrue": {
+					"Triggerx": ["cafe333fb818b71f"],
+					"Destroy": ["cafe461be433a65d"],
+					"In": ["cafefc60a3aa0031"]
+				}
+			}
 		},
 		"cafe333fb818b71f": {
 			"parent": "cafe56fe1e889d01",
@@ -908,7 +914,7 @@
 			}
 		},
 		"cafe28a57d49c9c0": {
-			"parent": "cafe1b6f582e4057",
+			"parent": "cafe2f7d23114c33",
 			"name": "Umbrella Hide",
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
@@ -922,6 +928,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [
 						"cafef77eb0d4283d",
+						"cafef2fa35d1b189",
 						"cafedb2103e6d7e4",
 						"cafe9f52df7e64b9",
 						"cafe7d08467a4305",
@@ -990,7 +997,7 @@
 			}
 		},
 		"cafe8b9ead3050d8": {
-			"parent": "cafe1b6f582e4057",
+			"parent": "cafe2f7d23114c33",
 			"name": "Umbrella Show",
 			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
 			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
@@ -1004,6 +1011,7 @@
 					"type": "TArray<SEntityTemplateReference>",
 					"value": [
 						"cafef77eb0d4283d",
+						"cafef2fa35d1b189",
 						"cafe7a35e05b362c",
 						"cafe9f52df7e64b9",
 						"cafe7d08467a4305",
@@ -1107,7 +1115,10 @@
 			},
 			"events": {
 				"PollFalse": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"]
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
 				}
 			}
 		},
@@ -1133,7 +1144,10 @@
 			},
 			"events": {
 				"PollTrue": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"]
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
 				}
 			}
 		},
@@ -1411,7 +1425,10 @@
 			},
 			"events": {
 				"PollTrue": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"],
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					],
 					"SendMessagex": ["cafe08dedb343950"]
 				}
 			}
@@ -1484,7 +1501,10 @@
 			},
 			"events": {
 				"PollTrue": {
-					"TransmitEvent": ["cafe26ae69beeb90", "cafeaf9faa6c0cfc"]
+					"TransmitEvent": [
+						"cafe26ae69beeb90",
+						"cafeaf9faa6c0cfc"
+					]
 				}
 			}
 		},
@@ -1655,13 +1675,103 @@
 			"events": {
 				"OnCompleted": { "SetTrue": ["cafedb3029247a9a"] }
 			}
+		},
+		"cafe2f7d23114c33": {
+			"parent": "cafe1b6f582e4057",
+			"name": "Fade SA",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafef2fa35d1b189": {
+			"parent": "cafe2f7d23114c33",
+			"name": "Fade Disabled ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafefc60a3aa0031": {
+			"parent": "cafe45be22f7651a",
+			"name": "Timer Delay",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 10 }
+			},
+			"events": { "Out": { "Trigger": ["cafe349da26f8ec3"] } }
+		},
+		"cafe45be22f7651a": {
+			"parent": "cafe56fe1e889d01",
+			"name": "SecurityRecorder Clear",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		},
+		"cafe461be433a65d": {
+			"parent": "cafe45be22f7651a",
+			"name": "SecuritySystemCamera",
+			"factory": "[modules:/zsecuritysystemcamera.class].pc_entitytype",
+			"blueprint": "[modules:/zsecuritysystemcamera.class].pc_entityblueprint",
+			"properties": {
+				"m_nDistance": { "type": "float32", "value": 0 },
+				"m_nAngle": { "type": "float32", "value": 0 },
+				"m_rOrigin": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafead3421b6e6e9",
+						"externalScene": null,
+						"exposedEntity": "Spatial_SecuritySystemDevice"
+					},
+					"postInit": true
+				},
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe7b2f71647d08",
+					"postInit": true
+				}
+			},
+			"events": { "OnEvent": { "SetValue": ["cafe349da26f8ec3"] } }
+		},
+		"cafe349da26f8ec3": {
+			"parent": "cafe45be22f7651a",
+			"name": "SecuritySystemRecorder Event",
+			"factory": "[modules:/zcontractsevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_sName": {
+					"type": "ZString",
+					"value": "SecuritySystemRecorder"
+				},
+				"m_bTriggerOnValue": { "type": "bool", "value": false },
+				"m_bSendDirectly": { "type": "bool", "value": false }
+			}
+		},
+		"cafe7b2f71647d08": {
+			"parent": "cafe461be433a65d",
+			"name": "ValueBool",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValue": { "type": "bool", "value": false }
+			}
+		},
+		"cafead3421b6e6e9": {
+			"parent": "cafe461be433a65d",
+			"name": "Camera_A",
+			"factory": "[assembly:/_pro/environment/templates/props/gameplay/surveillance/surveillance_cameras.template?/camera_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/environment/templates/props/gameplay/surveillance/surveillance_cameras.template?/camera_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bVisible": { "type": "bool", "value": false }
+			}
 		}
 	},
 	"propertyOverrides": [],
 	"overrideDeletes": [],
 	"pinConnectionOverrides": [],
 	"pinConnectionOverrideDeletes": [],
-	"externalScenes": ["[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"],
+	"externalScenes": [
+		"[assembly:/_pro/scenes/bricks/gameessentialsbase.brick].pc_entitytype"
+	],
 	"subType": "scene",
 	"quickEntityVersion": 3.1,
 	"extraFactoryDependencies": [],

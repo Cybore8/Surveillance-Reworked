@@ -149,22 +149,6 @@
 		},
 		{
 			"name": "On",
-			"tooltip": "SA/Recorded indicator will be dimmed when evidence is deleted. A dimmed SA/recorded indicator should generally indicate SA upon mission completion.",
-			"group": "SA Icon Recorded Opacity",
-			"type": "select",
-			"enabledByDefault": true,
-			"contentFolders": ["content-options/opacityon"]
-		},
-		{
-			"name": "Off",
-			"tooltip": "SA/Recorded indicator opacity will remain constant.",
-			"group": "SA Icon Recorded Opacity",
-			"type": "select",
-			"enabledByDefault": false,
-			"contentFolders": ["content-options/opacityoff"]
-		},
-		{
-			"name": "On",
 			"tooltip": "Separate recordings will be enabled in Freelancer. The checks for recordings will only occur post target eliminations.",
 			"group": "Freelancer - Separate Recordings",
 			"type": "select",
@@ -198,14 +182,14 @@
 		{
 			"name": "     Difficulty Info",
 			"tooltip": "If the default difficulty is selected for a map, destroying any security recorder will disable the added master cameras. The master cameras will also not be linked to any specific recorder.",
-			"group": "-----------------------------------------Locations-----------------------------------------",
+			"group": "----------------Locations----------------",
 			"type": "select",
 			"requirements": ["Cyb.RDummy"]
 		},
 		{
 			"name": "   Duck",
 			"tooltip": "Quack",
-			"group": "-----------------------------------------Locations-----------------------------------------",
+			"group": "----------------Locations----------------",
 			"type": "select",
 			"requirements": ["Cyb.RDummy"]
 		},
