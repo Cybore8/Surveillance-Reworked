@@ -6,4 +6,4 @@ Separate surveillance cameras and their respective linked recorders.
 
 ---
 
-`Cybore.RecordersPlus` v1.1.0, by Cyb. This README was automatically generated from the mod's manifest.
+`Cybore.RecordersPlus` v1.2.0, by Cyb. This README was automatically generated from the mod's manifest.
