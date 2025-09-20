@@ -180,20 +180,6 @@
 			"contentFolders": ["content-options/interactoff"]
 		},
 		{
-			"name": "     Difficulty Info",
-			"tooltip": "If the default difficulty is selected for a map, destroying any security recorder will disable the added master cameras. The master cameras will also not be linked to any specific recorder.",
-			"group": "----------------Locations----------------",
-			"type": "select",
-			"requirements": ["Cyb.RDummy"]
-		},
-		{
-			"name": "   Duck",
-			"tooltip": "Quack",
-			"group": "----------------Locations----------------",
-			"type": "select",
-			"requirements": ["Cyb.RDummy"]
-		},
-		{
 			"name": "Off",
 			"group": "Paris",
 			"type": "select",
